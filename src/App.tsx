@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import './theme.css';
+
+import Nav from './Nav';
+import Cover from './bodySection/Cover';
+import Portfolio from './bodySection/Portfolio';
+import AboutAndContact from './bodySection/AboutAndContact';
+
+const bodyViews = {
+  cover: { name: "Home", element: <Cover /> },
+  portfolio: { name: "Portfolio", element: <Portfolio /> },
+  aboutContact: { name: "About / Contact", element: <AboutAndContact /> }
+}
 
 function App() {
+  const [bodyView, setBodyView] = useState(bodyViews.portfolio.element);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Nav body={bodyViews} />
+
+      {bodyView}
+
+
+      <footer></footer>
+    </BrowserRouter>
   );
 }
 
