@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
-import './theme.css';
+import './theme.scss';
 
 import Nav from './Nav';
 import Cover from './bodySection/Cover';

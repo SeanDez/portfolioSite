@@ -1,7 +1,13 @@
 import React from 'react';
-import WufooForm from 'react-wufoo-embed';
 
 interface PropsShape {}
+
+const wufooFormStyle = { 
+  width: '100%', 
+  height: '700px', 
+  maxWidth: "700px", 
+  border: "none"
+}
 
 export default (props: PropsShape) => {
 
@@ -28,25 +34,18 @@ export default (props: PropsShape) => {
       </section>
 
       <section>
-        <h2>Contact</h2>
-
         <iframe
           height="700" 
-          title="Contact Form" 
+          title="Contact Form"
           // allowtransparency="true" 
           // frameborder="0" 
           scrolling="yes" 
-          style={{ width: '100%', height: '700px', maxWidth:"700px", border:"none" }} 
+          style={wufooFormStyle} 
           src="https://mrseand.wufoo.com/embed/z1xzigp70gac5xc/"> 
           <a href="https://mrseand.wufoo.com/forms/z1xzigp70gac5xc/">
             Contact Sean
           </a> 
         </iframe>
-
-        <p>
-          {process.env.REACT_APP_WUFOO_EMAIL}
-          {process.env.REACT_APP_WUFOO_FORM_ID}
-        </p>
       </section>
     </main>
   )
