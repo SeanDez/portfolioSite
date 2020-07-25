@@ -5,7 +5,7 @@ import BodyProps from './bodySection/BodyPropInterface';
 
 type navItemKeys = 'cover' | 'portfolio' | 'aboutContact';
 
-interface PropsShape <keyName extends string> {
+interface PropsShape <keyNames extends string> {
   body: BodyProps
 }
 
@@ -23,7 +23,7 @@ export default (props: PropsShape<navItemKeys>) => {
   )
 }
 
-// ------------------- Support functions
+
 
 
 

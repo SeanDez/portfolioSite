@@ -22,6 +22,7 @@ function App() {
 
       {bodyView}
 
+      <AboutAndContact />
 
       <footer></footer>
     </BrowserRouter>

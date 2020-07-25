@@ -14,10 +14,10 @@ export function makeLink(linkName: string): JSX.Element {
 }
 
 export function makeAllLinks(jsxData: BodyProps) {
-  const allKeys = Object.keys(jsxData);
+  const allKeys: Array<keyof BodyProps> = Object.keys(jsxData) as Array<keyof BodyProps>;
 
-  const linkComponents: JSX.Element[] = allKeys.map(keyName => {
-    const linkComponent = makeLink(jsxData[keyName].name);
+  const linkComponents: JSX.Element[] = allKeys.map((keyName: keyof BodyProps) => {
+    const linkComponent: JSX.Element = makeLink(jsxData[keyName].name);
     return linkComponent;
   })
 
