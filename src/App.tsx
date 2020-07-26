@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './theme.scss';
+import styled from 'styled-components';
 
 import Nav from './Nav';
 import Cover from './bodySection/Cover';
@@ -17,21 +18,30 @@ const bodyViews = {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Nav body={bodyViews} />
+    <OutermostStyleContainer>
+      <BrowserRouter>
+        <Nav body={bodyViews} />
 
-      <main>
-        <Switch>
-          <Route path='/about'><About /></Route>
-          <Route path='/contact'><Contact /></Route>
-          <Route path='/portfolio'><Portfolio /></Route>
-          <Route path='/'><Cover /></Route>
-        </Switch>
-      </main>
+        <main>
+          <Switch>
+              <Route path='/about'><About /></Route>
+              <Route path='/contact'><Contact /></Route>
+              <Route path='/portfolio'><Portfolio /></Route>
+              <Route path='/' exact><Cover /></Route>
+          </Switch>
+        </main>
 
-      <footer></footer>
-    </BrowserRouter>
+        <footer></footer>
+      </BrowserRouter>
+    </OutermostStyleContainer>
   );
 }
 
 export default App;
+
+
+const OutermostStyleContainer = styled.div`
+  padding: 2vh 2vw;
+  max-width: 1200px;
+  margin: 0 auto;
+`;

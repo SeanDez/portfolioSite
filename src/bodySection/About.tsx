@@ -28,7 +28,7 @@ export default (props: PropsShape) => {
       </p>
 
       <p>
-        I like what I do; my portfolio items were built for me, first and foremost. It'll always be that way. Coding can be frustrating but the aspect of building useful things is like grown-up legos, without the foot pain during mis-steps.
+        I like what I do; my portfolio items were built for me, first and foremost. Coding can be frustrating but the aspect of building useful things is like grown-up legos, without the foot pain during mis-steps.
       </p>
     </section>
   )
