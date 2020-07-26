@@ -19,10 +19,10 @@ function buildAllItemPreviews(previewData: ItemPreviewsInterFace[]) {
 export default (props: PropsShape) => {
 
   return (
-    <main>
+    <div>
       <p>Portfolio Here</p>
       {() => buildAllItemPreviews(itemPreviewData)}
-    </main>
+    </div>
   )
 }
 

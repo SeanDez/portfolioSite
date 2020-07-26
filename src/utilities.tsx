@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import BodyProps, { ComponentData } from './bodySection/BodyPropInterface';
 
 export function titleFirstCharacter(word: string) {
@@ -15,7 +14,7 @@ export function makeLink(linkObject: ComponentData): JSX.Element {
   )
 }
 
-export function makeAllLinksIntoList <genericKeyName extends string> (jsxData: Record<genericKeyName, ComponentData>) {
+export function makeAllLinksIntoListItems <genericKeyName extends string> (jsxData: Record<genericKeyName, ComponentData>) {
   const allKeys: Array<string> = Object.keys(jsxData);
 
   const linkComponents: JSX.Element[] = allKeys.map((keyName: string) => {
@@ -23,9 +22,5 @@ export function makeAllLinksIntoList <genericKeyName extends string> (jsxData: R
     return linkComponent;
   })
 
-  return (
-    <ul className="navigationList">
-      {linkComponents}
-    </ul>
-  );
-}
+  return linkComponents;
+} 

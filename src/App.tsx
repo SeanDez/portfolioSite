@@ -1,28 +1,33 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './theme.scss';
 
 import Nav from './Nav';
 import Cover from './bodySection/Cover';
 import Portfolio from './bodySection/Portfolio';
-import AboutAndContact from './bodySection/AboutAndContact';
+import About from './bodySection/About';
+import Contact from './bodySection/Contact';
 
 const bodyViews = {
   cover: { name: "Home", slug: '/', element: <Cover /> },
   portfolio: { name: "Portfolio", slug: "portfolio", element: <Portfolio /> },
-  aboutContact: { name: "About / Contact", slug: 'aboutContact', element: <AboutAndContact /> }
+  about: { name: "About", slug: 'about', element: <About /> },
+  contact: { name: "Contact", slug: 'contact', element: <Contact /> }
 }
 
 function App() {
-  const [bodyView, setBodyView] = useState(bodyViews.portfolio.element);
-
   return (
     <BrowserRouter>
       <Nav body={bodyViews} />
 
-      {bodyView}
-
-      <AboutAndContact />
+      <main>
+        <Switch>
+          <Route path='/about'><About /></Route>
+          <Route path='/contact'><Contact /></Route>
+          <Route path='/portfolio'><Portfolio /></Route>
+          <Route path='/'><Cover /></Route>
+        </Switch>
+      </main>
 
       <footer></footer>
     </BrowserRouter>
