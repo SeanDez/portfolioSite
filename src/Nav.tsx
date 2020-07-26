@@ -18,7 +18,6 @@ export default (props: PropsShape<navItemKeys>) => {
 
   return (
     <nav>
-      <p>placeholder</p>
       <NavList>
         {makeAllLinksIntoListItems(props.body)}
       </NavList>
