@@ -8,8 +8,14 @@
 //    }
 // }
 
+export interface ComponentData {
+  name: string, 
+  slug: string, 
+  element: JSX.Element
+}
+
 export default interface BodyInterface {
-  cover : { name: string, element: JSX.Element },
-  portfolio : { name: string, element: JSX.Element },
-  aboutContact : { name: string, element: JSX.Element },
+  cover: ComponentData,
+  portfolio: ComponentData,
+  aboutContact: ComponentData,
 }

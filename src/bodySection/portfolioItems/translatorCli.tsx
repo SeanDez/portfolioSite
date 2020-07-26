@@ -17,12 +17,13 @@ export default (props: any) => {
         <h3>Not Complete. Currently about 80% done</h3>
       </section>
 
-      <section>
-        <h3>Intent</h3>
+      <section className="teaser">
 
-        <p>My girlfriend is Thai. After breezing through an intro to Spanish course and never feeling behind the curve, the low repetition of Thai language courses left me feeling like a well designed translation app could do a lot better.</p>
+        
 
-        <p></p>My app follows the Pimsleur model of training by stating them in the foreign language, then defining them, then putting them together in a sentence.
+        <p>My girlfriend is Thai. After breezing through an Intro to Spanish course and never feeling behind the curve, the low repetition of Thai language courses left me feeling like a well designed translation app could do a lot better.</p>
+
+        <p>My app was designed for learning, as opposed to making big claims about how many words the program covers, which is where I think a lot of courses in obscure languages go wrong. loosely follows the Pimsleur model of training by stating them in the foreign language, then defining them, then putting them together in a sentence.</p>
       </section>
 
       <section>

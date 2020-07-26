@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { makeAllLinks } from "./utilities";
+import { makeAllLinksIntoList } from "./utilities";
 import BodyProps from './bodySection/BodyPropInterface';
 
 type navItemKeys = 'cover' | 'portfolio' | 'aboutContact';
@@ -18,7 +18,7 @@ export default (props: PropsShape<navItemKeys>) => {
   return (
     <nav>
       <p>placeholder</p>
-      {makeAllLinks(props.body)}
+      {makeAllLinksIntoList(props.body)}
     </nav>
   )
 }

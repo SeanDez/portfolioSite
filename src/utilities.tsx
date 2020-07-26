@@ -1,25 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import BodyProps from './bodySection/BodyPropInterface';
+import BodyProps, { ComponentData } from './bodySection/BodyPropInterface';
 
 export function titleFirstCharacter(word: string) {
   return word[0].toUpperCase() + word.slice(1);
 }
 
-export function makeLink(linkName: string): JSX.Element {
+export function makeLink(linkObject: ComponentData): JSX.Element {
   return (
-  <Link to={linkName}>{titleFirstCharacter(linkName)}</Link>
+  <li>
+    <Link to={linkObject.slug}>{linkObject.name}</Link>
+  </li>
   )
 }
 
-export function makeAllLinks(jsxData: BodyProps) {
-  const allKeys: Array<keyof BodyProps> = Object.keys(jsxData) as Array<keyof BodyProps>;
+export function makeAllLinksIntoList <genericKeyName extends string> (jsxData: Record<genericKeyName, ComponentData>) {
+  const allKeys: Array<string> = Object.keys(jsxData);
 
-  const linkComponents: JSX.Element[] = allKeys.map((keyName: keyof BodyProps) => {
-    const linkComponent: JSX.Element = makeLink(jsxData[keyName].name);
+  const linkComponents: JSX.Element[] = allKeys.map((keyName: string) => {
+    const linkComponent: JSX.Element = makeLink(jsxData[keyName as genericKeyName]);
     return linkComponent;
   })
 
-  return linkComponents;
+  return (
+    <ul className="navigationList">
+      {linkComponents}
+    </ul>
+  );
 }

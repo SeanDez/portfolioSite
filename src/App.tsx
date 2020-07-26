@@ -8,9 +8,9 @@ import Portfolio from './bodySection/Portfolio';
 import AboutAndContact from './bodySection/AboutAndContact';
 
 const bodyViews = {
-  cover: { name: "Home", element: <Cover /> },
-  portfolio: { name: "Portfolio", element: <Portfolio /> },
-  aboutContact: { name: "About / Contact", element: <AboutAndContact /> }
+  cover: { name: "Home", slug: '/', element: <Cover /> },
+  portfolio: { name: "Portfolio", slug: "portfolio", element: <Portfolio /> },
+  aboutContact: { name: "About / Contact", slug: 'aboutContact', element: <AboutAndContact /> }
 }
 
 function App() {
