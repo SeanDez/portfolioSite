@@ -13,14 +13,16 @@ const itemPreviewData: ItemPreviewsInterFace[] = [
 function buildAllItemPreviews(previewData: ItemPreviewsInterFace[]) {
   return previewData.map(singlePreview => (
     <div>
-      <Link to={singlePreview.slug}>{singlePreview.name}</Link>
+      <Link to={`${useRouteMatch().url}${singlePreview.slug}`}>
+        {singlePreview.name}
+      </Link>
     </div>
   ));
 }
 
 function buildAllRoutes(previewData: ItemPreviewsInterFace[]) {
   return previewData.map(singlePreview => (
-  <Route path={`${useRouteMatch().url}${singlePreview.slug}`}>
+  <Route path={`${useRouteMatch().path}${singlePreview.slug}`}>
     {singlePreview.element}
   </Route>
   ))
@@ -31,11 +33,9 @@ export default (props: PropsShape) => {
   return (
     <BrowserRouter>
       <section>
-        {buildAllItemPreviews(itemPreviewData)}
-
-        {/* Routes here */}
         <Switch>
           {buildAllRoutes(itemPreviewData)}
+          {buildAllItemPreviews(itemPreviewData)}
         </Switch>
       </section>
     </BrowserRouter>
