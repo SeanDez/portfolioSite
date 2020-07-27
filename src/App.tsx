@@ -3,24 +3,24 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './theme.scss';
 import styled from 'styled-components';
 
-import Nav from './Nav';
+import Nav from './bodySection/navigation/Nav';
 import Cover from './bodySection/Cover';
-import Portfolio from './bodySection/Portfolio';
+import Portfolio from './bodySection/portfolio/Portfolio';
 import About from './bodySection/About';
 import Contact from './bodySection/Contact';
 
 const bodyViews = {
-  cover: { name: "Home", slug: '/', element: <Cover /> },
-  portfolio: { name: "Portfolio", slug: "portfolio", element: <Portfolio /> },
-  about: { name: "About", slug: 'about', element: <About /> },
-  contact: { name: "Contact", slug: 'contact', element: <Contact /> }
+  cover: { name: "Home", slug: '/' },
+  portfolio: { name: "Portfolio", slug: "portfolio" },
+  about: { name: "About", slug: 'about' },
+  contact: { name: "Contact", slug: 'contact'}
 }
 
 function App() {
   return (
     <OutermostStyleContainer>
       <BrowserRouter>
-        <Nav body={bodyViews} />
+        <Nav bodyViews={bodyViews} />
 
         <main>
           <Switch>
