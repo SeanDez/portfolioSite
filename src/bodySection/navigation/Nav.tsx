@@ -10,7 +10,6 @@ interface PropsShape {
 // ------------------- Main Component
 
 export default (props: PropsShape) => {
-
   return (
     <nav>
       <div>

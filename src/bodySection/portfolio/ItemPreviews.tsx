@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ComponentData from '../ComponentDataInterface';
 
 
-export default function(previewData: ComponentData[]) {
+export default function(props: { previewData: ComponentData[], portfolioRoute: string }) {
   return (
     <div>
       {
-        previewData.map(singlePreview => (
+        props.previewData.map(singlePreview => (
           <div>
-            <Link to={`${useRouteMatch().url}${singlePreview.slug}`}>
+            <Link to={`${props.portfolioRoute}${singlePreview.slug}`}>
               {singlePreview.name}
             </Link>
           </div>

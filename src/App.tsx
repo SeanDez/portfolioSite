@@ -10,10 +10,10 @@ import About from './bodySection/About';
 import Contact from './bodySection/Contact';
 
 const bodyViews = {
-  cover: { name: "Home", slug: '/' },
-  portfolio: { name: "Portfolio", slug: "portfolio" },
-  about: { name: "About", slug: 'about' },
-  contact: { name: "Contact", slug: 'contact'}
+  cover: { name: "Home", slug: '/', componentName: "Cover" },
+  portfolio: { name: "Portfolio", slug: "portfolio", componentName: "Portfolio" },
+  about: { name: "About", slug: 'about', componentName: "About" },
+  contact: { name: "Contact", slug: 'contact', componentName: "Contact" }
 }
 
 function App() {

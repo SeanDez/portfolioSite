@@ -1,5 +1,6 @@
 
 export default interface ComponentData {
   name: string, 
-  slug: string
+  slug: string,
+  componentName: string
 }

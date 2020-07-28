@@ -1,26 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Switch, Link, Route, useRouteMatch } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, useRouteMatch } from 'react-router-dom';
 import navigationJsonData from "../../data/navigation.json";
 import ComponentData from '../ComponentDataInterface';
 import ItemPreviews from './ItemPreviews';
 
-import { createComponentNameFromString } from "../../utilities";
-
-
-import ThisSite from "./thisSite";
+import ThisSite from "./ThisSite";
+import ForeignSentenceRepeater from "./TranslatorCli";
+import CallTrackVoipMs from "./CallTrackVoipMs";
 
 interface PropsShape {}
 
-const typeCheckedData: Array<ComponentData> = Object.values(navigationJsonData);
+const typeCheckedNavigationData: Array<ComponentData> = Object.values(navigationJsonData);
 
-
-function buildAllRoutes(previewData: ComponentData[]) {
-  return previewData.map(singlePreview => (
-  <Route path={`${useRouteMatch().path}${singlePreview.slug}`}>
-    { React.createElement(createComponentNameFromString(singlePreview.name)) }
-  </Route>
-  ))
-}
 
 export default (props: PropsShape) => {
 
@@ -28,8 +19,18 @@ export default (props: PropsShape) => {
     <BrowserRouter>
       <section>
         <Switch>
-          {/* {buildAllRoutes(itemPreviewData)} */}
-          <ItemPreviews previewData={typeCheckedData} />
+          {/* Routes to sub-views */}
+          { typeCheckedNavigationData.map((componentData: ComponentData) => (
+            <Route path={`${useRouteMatch().path}${componentData.slug}`}>
+              <ThisSite />
+            </Route>
+          )) }
+
+          {/* Nav links on category view */}
+          <ItemPreviews 
+            previewData={typeCheckedNavigationData} 
+            portfolioRoute={useRouteMatch().url} 
+          />
         </Switch>
       </section>
     </BrowserRouter>
