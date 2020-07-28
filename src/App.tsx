@@ -3,17 +3,19 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './theme.scss';
 import styled from 'styled-components';
 
+import ComponentData from './bodySection/ComponentDataInterface';
+
 import Nav from './bodySection/navigation/Nav';
 import Cover from './bodySection/Cover';
 import Portfolio from './bodySection/portfolio/Portfolio';
 import About from './bodySection/About';
 import Contact from './bodySection/Contact';
 
-const bodyViews = {
-  cover: { name: "Home", slug: '/', componentName: "Cover" },
-  portfolio: { name: "Portfolio", slug: "portfolio", componentName: "Portfolio" },
-  about: { name: "About", slug: 'about', componentName: "About" },
-  contact: { name: "Contact", slug: 'contact', componentName: "Contact" }
+const bodyViews: Record<string, ComponentData> = {
+  cover: { name: "Home", slug: '/', component: <Cover /> },
+  portfolio: { name: "Portfolio", slug: "portfolio", component: <Portfolio /> },
+  about: { name: "About", slug: 'about', component: <About /> },
+  contact: { name: "Contact", slug: 'contact', component: <Contact /> }
 }
 
 function App() {
