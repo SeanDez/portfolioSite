@@ -2,13 +2,6 @@ import React from 'react';
 
 interface PropsShape {}
 
-const wufooFormStyle = { 
-  width: '100%', 
-  height: '700px', 
-  maxWidth: "700px", 
-  border: "none"
-}
-
 export default (props: PropsShape) => (
   <section>
     <h2>About</h2>

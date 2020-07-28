@@ -1,6 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
 
-export default (props: any) => {
+import LogoContainer from "../../shared/LogoContainer";
+import FittedImage from "../../shared/FittedImage";
+
+interface PropsShape {
+  GithubLogo: string
+}
+
+export default function (props: any) {
   return (
     <div>
       <section>
@@ -8,7 +16,15 @@ export default (props: any) => {
       </section>
 
       <section>
-        <p>Github icon here</p>
+        <LogoContainer>
+          <a 
+            target="_blank" 
+            href="https://github.com/SeanDez/foreignSentenceRepeater"
+            rel='noopener noreferrer' // for security
+          >
+            <FittedImage src={props.GithubLogo} alt='Github logo' />
+          </a>
+        </LogoContainer>
       </section>
 
       <section>
@@ -75,3 +91,5 @@ export default (props: any) => {
     </div>
   )
 }
+
+

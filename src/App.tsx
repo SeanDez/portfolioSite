@@ -12,10 +12,10 @@ import About from './bodySection/About';
 import Contact from './bodySection/Contact';
 
 const bodyViews: Record<string, ComponentData> = {
-  cover: { name: "Home", slug: '/', component: <Cover /> },
-  portfolio: { name: "Portfolio", slug: "portfolio", component: <Portfolio /> },
-  about: { name: "About", slug: 'about', component: <About /> },
-  contact: { name: "Contact", slug: 'contact', component: <Contact /> }
+  cover: { name: "Home", slug: '/', component: Cover },
+  portfolio: { name: "Portfolio", slug: "portfolio", component: Portfolio },
+  about: { name: "About", slug: 'about', component: About },
+  contact: { name: "Contact", slug: 'contact', component: Contact }
 }
 
 function App() {

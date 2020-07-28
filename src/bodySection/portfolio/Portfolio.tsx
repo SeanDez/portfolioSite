@@ -4,6 +4,9 @@ import navigationData from "../../data/navigation";
 import ComponentData from '../ComponentDataInterface';
 import ItemPreviews from './ItemPreviews';
 
+import { addPropsAndChildrenToJsxComponent } from '../../utilities';
+
+import GithubLogo from '../../images/GitHub-WordLogo.svg';
 
 const typeCheckedNavigationData: Array<ComponentData> = Object.values(navigationData);
 
@@ -16,11 +19,16 @@ export default (props: PropsShape) => {
       <section>
         <Switch>
           {/* Routes to sub-views */}
-          { typeCheckedNavigationData.map((componentData: ComponentData) => (
+          { typeCheckedNavigationData.map((componentData: ComponentData) => {
+            return (
             <Route path={`${useRouteMatch().path}${componentData.slug}`}>
-              {componentData.component}
+              {addPropsAndChildrenToJsxComponent(
+                componentData.component,
+                { GithubLogo }
+              )}
             </Route>
-          )) }
+          )}) 
+          }
 
           {/* Nav links on category view */}
           <ItemPreviews 
