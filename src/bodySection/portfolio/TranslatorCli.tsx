@@ -3,6 +3,10 @@ import styled from 'styled-components';
 
 import LogoContainer from "../../shared/LogoContainer";
 import FittedImage from "../../shared/FittedImage";
+import ImageContainer from '../../shared/ImageContainer';
+
+import ConfigScreenshot from "../../images/foreignSentenceRepeater/config_step_1.jpg";
+import WordDefinitionScreenshoot from "../../images/foreignSentenceRepeater/build_step_1_configure_words.jpg";
 
 interface PropsShape {
   GithubLogo: string
@@ -43,11 +47,27 @@ export default function (props: any) {
       <section>
         <h3>Functionality</h3>
 
-        <p></p>There are two main steps in this Node.js CLI app. Starting with the --config or -c flag, a guided wizard takes you through setup of a Google Cloud account, gathering necessary details for technical configuration and a couple desired options for the target foreign language and repeats per word, phrase and sentence.
+        <p></p>There are two main steps in this Node.js CLI app. Starting with the <code>--config</code> or <code>-c</code> flag, a guided wizard takes you through setup of a Google Cloud account, gathering necessary details for technical configuration and a couple desired options for the target foreign language and repeats per word, phrase and sentence.
 
-        <p></p>Then after filling out the sentences to be built in a sentences.txt file, the build process is run next by running the script and passing --build or -b.
+        <ImageContainer
+          maxContainerWidth="400px"
+          imageSrc={ConfigScreenshot}
+          imageAlt="The beginning configuration step"
+        />
 
-        <p></p>Because this translator app was built to help people trying to learn obcure languages like Thai, which has no spaces, the build step also requires selecting each foreign word in the initial sentence translation. Then, a suggested definition is offered for each word, which is overridable. After all words in the sentence are gathered, a subfolder of /audioCourse is built with 3 tracks: 
+        <p></p>Then after filling out the sentences to be built in a sentences.txt file, the build process is run next by running the script and passing <code>--build</code> or <code>-b</code>.
+
+        <p>Because this translator app was built to help people trying to learn obcure languages like Thai, which has no spaces, the build step also requires selecting each foreign word in the initial sentence translation.</p> 
+        
+        <p>Then, a suggested definition is offered for each word, which is overridable.</p> 
+
+        <ImageContainer
+          maxContainerWidth="400px"
+          imageSrc={WordDefinitionScreenshoot}
+          imageAlt="The word/definition selection screen"
+        />
+        
+        <p>After all words in the sentence are gathered, a subfolder of <code>/audioCourse</code> is built with 3 tracks: </p>
 
         <ol>
           <li>The sentence in the foreign language, and then in English</li>

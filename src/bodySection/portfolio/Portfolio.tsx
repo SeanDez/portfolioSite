@@ -23,16 +23,16 @@ export default (props: PropsShape) => {
       <section>
         <Switch>
           {/* Routes to sub-views */}
-          <Route path={`${useRouteMatch().url}/call-track-voipms`}>
+          <Route path={`${useRouteMatch().path}/call-track-voipms`}>
             <CallTrackVoipMs GithubLogo={GithubLogo} />
           </Route>
-          <Route path={`${useRouteMatch().url}/foreign-sentence-repeater`}>
+          <Route path={`${useRouteMatch().path}/foreign-sentence-repeater`}>
             <ForeignSentenceRepeater GithubLogo={GithubLogo} />
           </Route>
-          <Route path={`${useRouteMatch().url}/asana-task-repeater`}>
+          <Route path={`${useRouteMatch().path}/asana-task-repeater`}>
             <AsanaTaskRepeater GithubLogo={GithubLogo} />
           </Route>
-          <Route path={`${useRouteMatch().url}/this-site`}>
+          <Route path={`${useRouteMatch().path}/this-site`}>
             <ThisSite GithubLogo={GithubLogo} />
           </Route>
 
