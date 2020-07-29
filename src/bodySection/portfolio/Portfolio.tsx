@@ -7,8 +7,12 @@ import ItemPreviews from './ItemPreviews';
 import { addPropsAndChildrenToJsxComponent } from '../../utilities';
 
 import GithubLogo from '../../images/GitHub-WordLogo.svg';
+import CallTrackVoipMs from './CallTrackVoipMs';
+import ForeignSentenceRepeater from './TranslatorCli';
+import ThisSite from './ThisSite';
+import AsanaTaskRepeater from './AsanaTaskRepeater';
 
-const typeCheckedNavigationData: Array<ComponentData> = Object.values(navigationData);
+const typeCheckedNavigationData: Array<Omit<ComponentData, "component">> = Object.values(navigationData);
 
 interface PropsShape {}
 
@@ -19,16 +23,18 @@ export default (props: PropsShape) => {
       <section>
         <Switch>
           {/* Routes to sub-views */}
-          { typeCheckedNavigationData.map((componentData: ComponentData) => {
-            return (
-            <Route path={`${useRouteMatch().path}${componentData.slug}`}>
-              {addPropsAndChildrenToJsxComponent(
-                componentData.component,
-                { GithubLogo }
-              )}
-            </Route>
-          )}) 
-          }
+          <Route path={`${useRouteMatch().url}/call-track-voipms`}>
+            <CallTrackVoipMs GithubLogo={GithubLogo} />
+          </Route>
+          <Route path={`${useRouteMatch().url}/foreign-sentence-repeater`}>
+            <ForeignSentenceRepeater GithubLogo={GithubLogo} />
+          </Route>
+          <Route path={`${useRouteMatch().url}/asana-task-repeater`}>
+            <AsanaTaskRepeater GithubLogo={GithubLogo} />
+          </Route>
+          <Route path={`${useRouteMatch().url}/this-site`}>
+            <ThisSite GithubLogo={GithubLogo} />
+          </Route>
 
           {/* Nav links on category view */}
           <ItemPreviews 

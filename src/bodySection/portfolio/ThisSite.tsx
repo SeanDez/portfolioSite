@@ -1,10 +1,26 @@
 import React from 'react';
+import LogoContainer from "../../shared/LogoContainer";
+import FittedImage from "../../shared/FittedImage";
 
-export default (props: any) => {
+interface PropsShape {
+  GithubLogo: string
+}
+
+export default (props: PropsShape) => {
 
   return (
     <div>
       <p>This simple static site is built with create-react-app, using the Typescript template. It's hosted on a public AWS S3 bucket.</p>
+
+      <LogoContainer>
+          <a 
+            target="_blank" 
+            href="https://github.com/SeanDez/foreignSentenceRepeater"
+            rel='noopener noreferrer' // for security
+          >
+            <FittedImage src={props.GithubLogo} alt='Github logo' />
+          </a>
+        </LogoContainer>
 
       <h2>"Justify your design decisions"</h2>
 

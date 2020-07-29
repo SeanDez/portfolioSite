@@ -19,7 +19,7 @@ export default function (props: any) {
         <LogoContainer>
           <a 
             target="_blank" 
-            href="https://github.com/SeanDez/foreignSentenceRepeater"
+            href="https://github.com/SeanDez/portfolioSite"
             rel='noopener noreferrer' // for security
           >
             <FittedImage src={props.GithubLogo} alt='Github logo' />
