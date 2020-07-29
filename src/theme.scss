@@ -1,12 +1,15 @@
 * {
   background-color: black;
-  color: #C3E8BD;
+  color: #00FF00;
   line-height: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Press Start 2P', Helvetica, sans-serif;
-  color: #9DDBAD;
+}
+
+a:hover {
+  color: #627C85;
 }
 
 p {
@@ -19,5 +22,9 @@ section {
 
 .App {
   text-align: center;
+}
+
+.warningText {
+  color: red;
 }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import LogoContainer from "../../shared/LogoContainer";
 import FittedImage from "../../shared/FittedImage";
@@ -12,7 +11,7 @@ interface PropsShape {
   GithubLogo: string
 }
 
-export default function (props: any) {
+export default function (props: PropsShape) {
   return (
     <div>
       <section>
@@ -32,13 +31,10 @@ export default function (props: any) {
       </section>
 
       <section>
-        <h3>Not Complete. Currently about 80% done</h3>
+        <h3 className="warningText">Not Complete. Currently about 80% done</h3>
       </section>
 
       <section className="teaser">
-
-        
-
         <p>My girlfriend is Thai. After breezing through an Intro to Spanish course and never feeling behind the curve, the low repetition of Thai language courses left me feeling like a well designed translation app could do a lot better.</p>
 
         <p>My app was designed for learning, as opposed to making big claims about how many words the program covers, which is where I think a lot of courses in obscure languages go wrong. loosely follows the Pimsleur model of training by stating them in the foreign language, then defining them, then putting them together in a sentence.</p>
@@ -47,7 +43,7 @@ export default function (props: any) {
       <section>
         <h3>Functionality</h3>
 
-        <p></p>There are two main steps in this Node.js CLI app. Starting with the <code>--config</code> or <code>-c</code> flag, a guided wizard takes you through setup of a Google Cloud account, gathering necessary details for technical configuration and a couple desired options for the target foreign language and repeats per word, phrase and sentence.
+        <p>There are two main steps in this Node.js CLI app. Starting with the <code>--config</code> or <code>-c</code> flag, a guided wizard takes you through setup of a Google Cloud account, gathering necessary details for technical configuration and a couple desired options for the target foreign language and repeats per word, phrase and sentence.</p>
 
         <ImageContainer
           maxContainerWidth="400px"
@@ -55,7 +51,7 @@ export default function (props: any) {
           imageAlt="The beginning configuration step"
         />
 
-        <p></p>Then after filling out the sentences to be built in a sentences.txt file, the build process is run next by running the script and passing <code>--build</code> or <code>-b</code>.
+        <p>Then after filling out the sentences to be built in a sentences.txt file, the build process is run next by running the script and passing <code>--build</code> or <code>-b</code>.</p>
 
         <p>Because this translator app was built to help people trying to learn obcure languages like Thai, which has no spaces, the build step also requires selecting each foreign word in the initial sentence translation.</p> 
         
@@ -67,7 +63,7 @@ export default function (props: any) {
           imageAlt="The word/definition selection screen"
         />
         
-        <p>After all words in the sentence are gathered, a subfolder of <code>/audioCourse</code> is built with 3 tracks: </p>
+        <p>After all words in the sentence are gathered, a subfolder of <code>/audioCourse</code> is built with 3 tracks:</p>
 
         <ol>
           <li>The sentence in the foreign language, and then in English</li>
@@ -83,7 +79,7 @@ export default function (props: any) {
 
         <p>The text translations, text to speech, and file saving are all working. But on the concatenation step, ffmpeg is cutting off a part of the file on both ends, wrecking the concatenated audios. It will take me some time to find a fix or workaround.</p>
 
-        <p>Once that issue is resolved though, the project is basically complete other than final bug testing.</p>
+        <p>Once that issue is resolved, the project is complete after final bug testing.</p>
       </section>
 
       <section>
