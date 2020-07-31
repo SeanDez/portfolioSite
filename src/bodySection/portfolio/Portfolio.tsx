@@ -1,10 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, useRouteMatch } from 'react-router-dom';
+import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import navigationData from "../../data/navigation";
 import ComponentData from '../ComponentDataInterface';
 import ItemPreviews from './ItemPreviews';
-
-import { addPropsAndChildrenToJsxComponent } from '../../utilities';
 
 import GithubLogo from '../../images/GitHub-WordLogo.svg';
 import CallTrackVoipMs from './CallTrackVoipMs';
@@ -19,7 +17,6 @@ interface PropsShape {}
 export default (props: PropsShape) => {
 
   return (
-    <BrowserRouter>
       <section>
         <Switch>
           {/* Routes to sub-views */}
@@ -35,7 +32,6 @@ export default (props: PropsShape) => {
           <Route path={`${useRouteMatch().path}/this-site`}>
             <ThisSite GithubLogo={GithubLogo} />
           </Route>
-
           {/* Nav links on category view */}
           <ItemPreviews 
             previewData={typeCheckedNavigationData} 
@@ -43,7 +39,6 @@ export default (props: PropsShape) => {
           />
         </Switch>
       </section>
-    </BrowserRouter>
   )
 }
 

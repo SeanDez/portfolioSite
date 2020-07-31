@@ -22,8 +22,6 @@ export default (props: PropsShape) => {
           </a>
         </LogoContainer>
 
-      <h2>"Justify your design decisions"</h2>
-
       <h3>Color scheme</h3>
 
       <p>On <a href="https://www.siteinspire.com/websites?categories=19">Site Inspire's Portfolio Showcase</a> for every 10 sites 5 were white. The rest were a mix of multi-color and black. To slightly boost uniqueness among a majorify of white portfolio sites I went with black.</p>

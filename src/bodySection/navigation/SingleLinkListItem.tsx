@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ComponentData from '../ComponentDataInterface';
-import styled from 'styled-components';
+import StyledLink from '../../shared/StyledLink';
+
 
 export default (props: { linkData: ComponentData }): JSX.Element => {
   return (
@@ -10,12 +10,3 @@ export default (props: { linkData: ComponentData }): JSX.Element => {
   </li>
   )
 }
-
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-
-  &:hover {
-    color: blue;
-  }
-`;

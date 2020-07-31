@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import ComponentData  from '../ComponentDataInterface';
 
-import SingleListListItem from './SingleLinkListItem';
+import SingleLinkListItem from './SingleLinkListItem';
 
 export default (props: { jsxData: Record<string, ComponentData> }) => {
   return (
     <section>
       <NavList>
         { Object.values(props.jsxData).map((nameAndSlug: ComponentData) => (
-          <SingleListListItem linkData={nameAndSlug} />
+          <SingleLinkListItem linkData={nameAndSlug} />
         )) }
       </NavList>
     </section>
