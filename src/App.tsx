@@ -1,7 +1,7 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import './theme.scss';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 import ComponentData from './bodySection/ComponentDataInterface';
 
@@ -11,6 +11,12 @@ import Portfolio from './bodySection/portfolio/Portfolio';
 import About from './bodySection/About';
 import Contact from './bodySection/Contact';
 
+import nightPlanetBoat from './images/nightPlanetBoat.jpg';
+import spaceGasClouds from './images/space gas clouds.jpg';
+import repeaterGearVisual from './images/repeater-automation1.png';
+import foreignCliffHouse from './images/foreign-cliffHouse.jpg';
+import copperRotaryPhone from './images/calltrack-rotaryphone2.jpg';
+
 const bodyViews: Record<string, ComponentData> = {
   cover: { name: "Home", slug: '/', component: Cover },
   portfolio: { name: "Portfolio", slug: "/portfolio", component: Portfolio },
@@ -18,12 +24,30 @@ const bodyViews: Record<string, ComponentData> = {
   contact: { name: "Contact", slug: '/contact', component: Contact }
 }
 
-function App() {
-  return (
-    <OutermostStyleContainer>
-      <BrowserRouter>
-        <Nav bodyViews={bodyViews} />
+const backgrounds = {
+  '/': nightPlanetBoat,
+  '/portfolio': spaceGasClouds,
+  '/about': spaceGasClouds,
+  '/contact': spaceGasClouds,
+  '/portfolio/call-track-voipms': copperRotaryPhone,
+  '/portfolio/foreign-sentence-repeater': foreignCliffHouse,
+  '/portfolio/this-site': spaceGasClouds,
+  '/portfolio/asana-task-repeater': repeaterGearVisual
+}
 
+function App(props: any) {
+  const [backgroundImage, setBackgroundImage] = useState(nightPlanetBoat);
+
+
+  useEffect(() => {
+    console.log('props.match :>> ', props.match);
+    console.log('props.location :>> ', props.location);
+    console.log('props.history', props.history)
+  }, [props.location]);
+
+  return (
+    <OuterContainer backgroundImage={backgroundImage}>
+        <Nav bodyViews={bodyViews} />
         <main>
           <Switch>
               <Route path='/about'><About /></Route>
@@ -32,18 +56,26 @@ function App() {
               <Route path='/' exact><Cover /></Route>
           </Switch>
         </main>
-
         <footer></footer>
-      </BrowserRouter>
-    </OutermostStyleContainer>
+    </OuterContainer>
   );
 }
 
-export default App;
+const AppWithRouter = withRouter(App);
 
+export default AppWithRouter;
 
-const OutermostStyleContainer = styled.div`
+interface ExtraContainerProps {
+  backgroundImage: string;
+}
+
+const OuterContainer = styled.div<ExtraContainerProps>`
+  background-image: url(${props => props.backgroundImage});
+  background-position: center;
+  background-size: cover;
+  position: relative;
   padding: 2vh 2vw;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 100vh;
 `;

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
+import styled from 'styled-components';
+
 import navigationData from "../../data/navigation";
 import ComponentData from '../ComponentDataInterface';
 import ItemPreviews from './ItemPreviews';
@@ -17,7 +19,7 @@ interface PropsShape {}
 export default (props: PropsShape) => {
 
   return (
-      <section>
+      <StyledSection>
         <Switch>
           {/* Routes to sub-views */}
           <Route path={`${useRouteMatch().path}/call-track-voipms`}>
@@ -38,7 +40,10 @@ export default (props: PropsShape) => {
             portfolioRoute={useRouteMatch().url} 
           />
         </Switch>
-      </section>
+      </StyledSection>
   )
 }
 
+const StyledSection = styled.section`
+  height: 100%;
+`;
