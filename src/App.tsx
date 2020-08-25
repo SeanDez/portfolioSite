@@ -36,14 +36,16 @@ const backgrounds = {
 }
 
 function App(props: any) {
-  const [backgroundImage, setBackgroundImage] = useState(nightPlanetBoat);
+  // const [backgroundImage, setBackgroundImage] = useState(nightPlanetBoat);
+  // const backgroundImage = backgrounds[props.location.pathName];
+  const backgroundImage = nightPlanetBoat;
 
-
-  useEffect(() => {
-    console.log('props.match :>> ', props.match);
-    console.log('props.location :>> ', props.location);
-    console.log('props.history', props.history)
-  }, [props.location]);
+  // useEffect(() => {
+  //   console.log('props.match :>> ', props.match);
+  //   console.log('props.location :>> ', props.location);
+  //   console.log('props.history', props.history)
+  //   setBackgroundImage(backgrounds[props.location.pathName as keyof typeof backgrounds]);
+  // }, [props.location.pathName]: [key: string]: string );
 
   return (
     <OuterContainer backgroundImage={backgroundImage}>
@@ -73,6 +75,7 @@ const OuterContainer = styled.div<ExtraContainerProps>`
   background-image: url(${props => props.backgroundImage});
   background-position: center;
   background-size: cover;
+  box-shadow: inset 0 0 0 100vw rgba(10, 10, 10, 0.5);
   position: relative;
   padding: 2vh 2vw;
   max-width: 1200px;
