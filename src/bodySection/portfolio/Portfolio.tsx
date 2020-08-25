@@ -12,8 +12,6 @@ import ForeignSentenceRepeater from './TranslatorCli';
 import ThisSite from './ThisSite';
 import AsanaTaskRepeater from './AsanaTaskRepeater';
 
-const typeCheckedNavigationData: Array<Omit<ComponentData, "component">> = Object.values(navigationData);
-
 interface PropsShape {}
 
 export default (props: PropsShape) => {
@@ -36,7 +34,7 @@ export default (props: PropsShape) => {
           </Route>
           {/* Nav links on category view */}
           <ItemPreviews 
-            previewData={typeCheckedNavigationData} 
+            previewData={Object.values(navigationData)} 
             portfolioRoute={useRouteMatch().url} 
           />
         </Switch>
