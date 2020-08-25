@@ -6,7 +6,7 @@ interface PropsShape {
   maxContainerWidth: string,
   imageSrc: string,
   imageAlt: string,
-  style?: any
+  style?: object | undefined
 }
 
 export default (props: PropsShape) => (
