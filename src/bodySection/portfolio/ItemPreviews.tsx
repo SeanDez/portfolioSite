@@ -8,8 +8,8 @@ export default function(props: { previewData: ComponentData[], portfolioRoute: s
   return (
     <div>
       {
-        props.previewData.map(singlePreview => (
-          <StyledLink to={`${props.portfolioRoute}${singlePreview.slug}`}>
+        props.previewData.map((singlePreview, index) => (
+          <StyledLink to={`${props.portfolioRoute}${singlePreview.slug}`} key={index}>
             <Container>
                 <h4>{singlePreview.name}</h4>
               <MutedPreviewText>{singlePreview.previewText}</MutedPreviewText>

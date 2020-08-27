@@ -10,11 +10,11 @@ export default function (props: PropsShape) {
     <section>
       <h2>Asana Task Repeater</h2>
 
-      <p>Asana is a nice task manager but as with most of them, you need to keep creating any task that needs repeating. There is a "duplicate feature" which is nice.</p>
+      <p>Asana is a project management tool similar to Basecamp. I find it very helpful for listing out project features. It is also good for collaborative projects.</p>
 
-      <p>What would be even better is a dashboard that auto-repeats tasks on a set schedule.</p>
+      <p>One feature it doesn't have is the ability to auto-repeat tasks on a set schedule. This would save a lot of manual task duplication for common team assignments.</p>
 
-      <p>That is what this app does.</p>
+      <p>That is exactly what this app does. Asana Task Repeater pulls a list of tasks from a user's available projects, and runs a "duplicate' operation on them according to a user defined ruleset.</p>
 
       <h2>Planned additions</h2>
 
