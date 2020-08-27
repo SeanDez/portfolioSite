@@ -36,16 +36,7 @@ const backgrounds = {
 }
 
 function App(props: any) {
-  // const [backgroundImage, setBackgroundImage] = useState(nightPlanetBoat);
-  // const backgroundImage = backgrounds[props.location.pathName];
-  const backgroundImage = nightPlanetBoat;
-
-  // useEffect(() => {
-  //   console.log('props.match :>> ', props.match);
-  //   console.log('props.location :>> ', props.location);
-  //   console.log('props.history', props.history)
-  //   setBackgroundImage(backgrounds[props.location.pathName as keyof typeof backgrounds]);
-  // }, [props.location.pathName]: [key: string]: string );
+  const backgroundImage = backgrounds[props.location.pathname as keyof typeof backgrounds];
 
   return (
     <OuterContainer backgroundImage={backgroundImage}>
