@@ -35,6 +35,19 @@ const backgrounds = {
   '/portfolio/asana-task-repeater': repeaterGearVisual
 }
 
+
+const fadeSettings = {
+  opaque: {
+    opacity: 1,
+    transition: { delay: 1 }
+  },
+  hidden: {
+    opacity: 0,
+    transition: { delay: 1 }
+
+  }
+}
+
 function App(props: any) {
   const currentPath = props.location.pathname;
 

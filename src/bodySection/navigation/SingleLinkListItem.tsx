@@ -27,7 +27,7 @@ const StyledButton = styled(motion.button)`
   background: none;
   color: white;
   padding: 10px 20px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 
   &:hover {
     background: rgba(200, 200, 200, .02);
