@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import './theme.scss';
 import styled, { ThemeProvider } from 'styled-components';
+import { AnimatePresence } from 'framer-motion';
 
 import ComponentData from './bodySection/ComponentDataInterface';
 
@@ -35,18 +36,22 @@ const backgrounds = {
 }
 
 function App(props: any) {
-  const backgroundImage = backgrounds[props.location.pathname as keyof typeof backgrounds];
+  const currentPath = props.location.pathname;
+
+  const backgroundImage = backgrounds[currentPath as keyof typeof backgrounds];
 
   return (
     <OuterContainer backgroundImage={backgroundImage}>
         <Nav bodyViews={bodyViews} />
         <main>
-          <Switch>
-              <Route path='/about'><About /></Route>
-              <Route path='/contact'><Contact /></Route>
-              <Route path='/portfolio'><Portfolio /></Route>
-              <Route path='/' exact><Cover /></Route>
-          </Switch>
+          <AnimatePresence>
+            <Switch key={currentPath}>
+                <Route path='/about'><About /></Route>
+                <Route path='/contact'><Contact /></Route>
+                <Route path='/portfolio'><Portfolio /></Route>
+                <Route path='/' exact><Cover /></Route>
+            </Switch>
+          </AnimatePresence>
         </main>
         <footer></footer>
     </OuterContainer>
