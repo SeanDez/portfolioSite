@@ -50,7 +50,6 @@ const fadeSettings = {
 
 function App(props: any) {
   const location = useLocation();
-  console.log('location :>> ', location);
 
   const backgroundImage = backgrounds[location.pathname as keyof typeof backgrounds];
 
