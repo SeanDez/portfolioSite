@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom';
+import React from 'react';
+import { Switch, Route, useLocation } from 'react-router-dom';
 import './theme.scss';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
 
 import ComponentData from './bodySection/ComponentDataInterface';
@@ -18,10 +18,10 @@ import foreignCliffHouse from './images/foreign-cliffHouse.jpg';
 import copperRotaryPhone from './images/calltrack-rotaryphone2.jpg';
 
 const bodyViews: Record<string, ComponentData> = {
-  cover: { name: "Home", slug: '/', component: Cover },
-  portfolio: { name: "Portfolio", slug: "/portfolio", component: Portfolio },
-  about: { name: "About", slug: '/about', component: About },
-  contact: { name: "Contact", slug: '/contact', component: Contact }
+  cover: { name: "Home", slug: '/' },
+  portfolio: { name: "Portfolio", slug: "/portfolio" },
+  about: { name: "About", slug: '/about' },
+  contact: { name: "Contact", slug: '/contact' }
 }
 
 const backgrounds = {
@@ -39,30 +39,31 @@ const backgrounds = {
 const fadeSettings = {
   opaque: {
     opacity: 1,
-    transition: { delay: 1 }
+    transition: { delay: 0.4 }
   },
   hidden: {
     opacity: 0,
-    transition: { delay: 1 }
+    transition: { delay: 0.4 }
 
   }
 }
 
 function App(props: any) {
-  const currentPath = props.location.pathname;
+  const location = useLocation();
+  console.log('location :>> ', location);
 
-  const backgroundImage = backgrounds[currentPath as keyof typeof backgrounds];
+  const backgroundImage = backgrounds[location.pathname as keyof typeof backgrounds];
 
   return (
     <OuterContainer backgroundImage={backgroundImage}>
         <Nav bodyViews={bodyViews} />
         <main>
-          <AnimatePresence>
-            <Switch key={currentPath}>
-                <Route path='/about'><About /></Route>
-                <Route path='/contact'><Contact /></Route>
-                <Route path='/portfolio'><Portfolio /></Route>
-                <Route path='/' exact><Cover /></Route>
+          <AnimatePresence exitBeforeEnter>
+            <Switch location={location} key={location.key}>
+                <Route path='/about'><About fadeSettings={fadeSettings} /></Route>
+                <Route path='/contact'><Contact fadeSettings={fadeSettings} /></Route>
+                <Route path='/portfolio'><Portfolio fadeSettings={fadeSettings} /></Route>
+                <Route path='/' exact><Cover fadeSettings={fadeSettings} /></Route>
             </Switch>
           </AnimatePresence>
         </main>
@@ -71,9 +72,7 @@ function App(props: any) {
   );
 }
 
-const AppWithRouter = withRouter(App);
-
-export default AppWithRouter;
+export default App;
 
 interface ExtraContainerProps {
   backgroundImage: string;

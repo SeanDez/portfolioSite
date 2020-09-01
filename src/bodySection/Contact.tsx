@@ -1,6 +1,9 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-interface PropsShape {}
+interface PropsShape {
+  fadeSettings: any
+}
 
 const wufooFormStyle = { 
   width: '100%', 
@@ -12,7 +15,12 @@ const wufooFormStyle = {
 export default (props: PropsShape) => {
 
   return (
-    <section>
+    <motion.section
+      variants={props.fadeSettings}
+      initial='hidden'
+      exit='hidden'
+      animate='opaque'
+    >
       <iframe
         height="700" 
         title="Contact Form"
@@ -25,6 +33,6 @@ export default (props: PropsShape) => {
           Contact Sean
         </a> 
       </iframe>
-    </section>
+    </motion.section>
   )
 }

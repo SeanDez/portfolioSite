@@ -1,9 +1,17 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-interface PropsShape {}
+interface PropsShape {
+  fadeSettings: any
+}
 
 export default (props: PropsShape) => (
-  <section>
+  <motion.section
+    variants={props.fadeSettings}
+    initial='hidden'
+    exit='hidden'
+    animate='opaque'
+  >
     <h2>About</h2>
 
     <p>I'm a React Typescript developer currently in Miami, moving to Atlanta for greater job opportunities.</p>
@@ -15,5 +23,5 @@ export default (props: PropsShape) => (
     <p>I'm studying AWS on the side. I'll try to sit for the Certified Developer Associate exam in six to twelve months. My long term goal is to add AWS devops pipelines to my skillset.</p>
 
     <p>I like what I do; my portfolio items were built for me. Coding is like grown-up legos without foot pain when you mis-step.</p>
-  </section>
+  </motion.section>
 );

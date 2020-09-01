@@ -25,12 +25,13 @@ export default (props: { linkData: ComponentData }): JSX.Element => {
 
 const StyledButton = styled(motion.button)`
   background: none;
+  border: 1px solid rgba(255, 255, 255, .4);
   color: white;
   padding: 10px 20px;
   /* border-radius: 50%; */
 
   &:hover {
-    background: rgba(200, 200, 200, .02);
+    background: rgba(200, 200, 200, .04);
 
   }
 `;

@@ -3,24 +3,31 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-interface PropsShape {}
+interface PropsShape {
+  fadeSettings: any
+}
 
 const textMotions = {
   offscreen: {
     x: 200,
-    y: '-100vw'
+    y: '100vh'
   },
   onscreen: {
     x: 0,
     y: 0,
-    transition: { duration: 2, type: 'spring' }
+    transition: { duration: 4, type: 'spring' }
   }
 }
 
 export default (props: PropsShape) => {
 
   return (
-      <OuterContainer>
+      <OuterContainer
+        variants={props.fadeSettings}
+        initial='hidden'
+        exit='hidden'
+        animate='opaque'
+      >
         <TextContainer
           variants={textMotions}
           initial='offscreen'
@@ -28,14 +35,14 @@ export default (props: PropsShape) => {
         >
           <h1>Sean Dezoysa</h1>
           <h3>React Typescript Developer</h3>
-          <h4>(Plus Express, PostgreSQL, and a bit of serverless AWS too)</h4>
+          <h4>(Express & PostgreSQL on the back end)</h4>
         </TextContainer>
       </OuterContainer>
   )
 }
 
 
-const OuterContainer = styled.div`
+const OuterContainer = styled(motion.div)`
   display: flex;
   height: 80vh;
   flex-flow: row wrap;
@@ -45,4 +52,9 @@ const OuterContainer = styled.div`
 const TextContainer = styled(motion.div)`
   display: flex;
   flex-flow: column nowrap;
+
+  & > * {
+    line-height: 2rem;
+    margin: 10px;
+  }
 `;
