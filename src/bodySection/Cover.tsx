@@ -10,12 +10,14 @@ interface PropsShape {
 const textMotions = {
   offscreen: {
     x: 200,
-    y: '100vh'
+    y: '-150vh',
+    scale: 0.2
   },
   onscreen: {
     x: 0,
     y: 0,
-    transition: { duration: 4, type: 'spring' }
+    scale: 1,
+    transition: { delay: 1, duration: 7, type: 'spring' }
   }
 }
 
@@ -32,6 +34,7 @@ export default (props: PropsShape) => {
           variants={textMotions}
           initial='offscreen'
           animate='onscreen'
+          exit='offscreen'
         >
           <h1>Sean Dezoysa</h1>
           <h3>React Typescript Developer</h3>
@@ -47,6 +50,7 @@ const OuterContainer = styled(motion.div)`
   height: 80vh;
   flex-flow: row wrap;
   align-content: flex-end;
+  overflow: hidden;
 `;
 
 const TextContainer = styled(motion.div)`

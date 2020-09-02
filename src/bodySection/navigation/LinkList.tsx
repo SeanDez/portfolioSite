@@ -19,6 +19,10 @@ export default (props: { jsxData: Record<string, ComponentData> }) => {
 const NavList = styled.ul`
   list-style-type: none;
   display: flex;
-  flex-flow: row-wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
+  
+  > * {
+    margin: 3px 0;
+  }
 `
