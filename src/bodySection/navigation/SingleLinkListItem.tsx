@@ -2,7 +2,7 @@ import React from 'react';
 import ComponentData from '../ComponentDataInterface';
 import StyledLink from '../../shared/StyledLink';
 import { motion } from 'framer-motion';
-import styled from 'styled-components';
+import StyledButton from '../../shared/StyledButton';
 
 export default (props: { linkData: ComponentData }): JSX.Element => {
   return (
@@ -19,16 +19,3 @@ export default (props: { linkData: ComponentData }): JSX.Element => {
   </motion.li>
   )
 }
-
-const StyledButton = styled(motion.button)`
-  background: none;
-  border: 1px solid rgba(255, 255, 255, .4);
-  color: white;
-  padding: 10px 20px;
-  /* border-radius: 50%; */
-
-  &:hover {
-    background: rgba(200, 200, 200, .04);
-
-  }
-`;

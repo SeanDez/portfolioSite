@@ -6,13 +6,11 @@ import SingleLinkListItem from './SingleLinkListItem';
 
 export default (props: { jsxData: Record<string, ComponentData> }) => {
   return (
-    <section>
-      <NavList>
-        { Object.values(props.jsxData).map((nameAndSlug: ComponentData, index: number) => (
-          <SingleLinkListItem linkData={nameAndSlug} key={index} />
-        )) }
-      </NavList>
-    </section>
+    <NavList>
+      { Object.values(props.jsxData).map((nameAndSlug: ComponentData, index: number) => (
+        <SingleLinkListItem linkData={nameAndSlug} key={index} />
+      )) }
+    </NavList>
   )
 } 
 

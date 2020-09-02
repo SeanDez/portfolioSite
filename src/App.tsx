@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import './theme.scss';
 import styled from 'styled-components';
@@ -50,6 +50,17 @@ const fadeSettings = {
 
 function App(props: any) {
   const location = useLocation();
+  const [showContactModal, setShowContactModal] = useState(false);
+
+  // switch modal state defending on location path
+  useEffect(() => {
+    const currentPath = location.pathname;
+    if (currentPath === '/contact') {
+      setShowContactModal(true);
+    } else {
+      setShowContactModal(false);
+    }
+  }, [location.pathname])
 
   const backgroundImage = backgrounds[location.pathname as keyof typeof backgrounds];
 
@@ -60,7 +71,12 @@ function App(props: any) {
           <AnimatePresence exitBeforeEnter>
             <Switch location={location} key={location.key}>
                 <Route path='/about'><About fadeSettings={fadeSettings} /></Route>
-                <Route path='/contact'><Contact fadeSettings={fadeSettings} /></Route>
+                <Route path='/contact'>
+                  <Contact 
+                    fadeSettings={fadeSettings}
+                    showContactModal={showContactModal}
+                  />
+                </Route>
                 <Route path='/portfolio'><Portfolio fadeSettings={fadeSettings} /></Route>
                 <Route path='/' exact><Cover fadeSettings={fadeSettings} /></Route>
             </Switch>

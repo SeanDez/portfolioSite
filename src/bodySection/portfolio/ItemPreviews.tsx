@@ -22,8 +22,8 @@ export default function(props: { previewData: ComponentData[], portfolioRoute: s
 }
 
 const Container = styled.div`
-  border: 2px dotted rgba(90, 90, 90, .8);
-  border-radius: 5%;
+  border: 2px dotted rgba(90, 90, 90, .4);
+  border-radius: 1%;
   padding: 2vh 2vw;
 
   &:hover {

@@ -10,14 +10,14 @@ interface PropsShape {
 const textMotions = {
   offscreen: {
     x: 200,
-    y: '-150vh',
+    y: '-110vh',
     scale: 0.2
   },
   onscreen: {
     x: 0,
     y: 0,
     scale: 1,
-    transition: { delay: 1, duration: 7, type: 'spring' }
+    transition: { delay: 1, duration: 2, type: 'tween', ease: 'backOut' }
   }
 }
 
