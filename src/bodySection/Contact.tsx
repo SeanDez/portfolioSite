@@ -73,11 +73,14 @@ const ModalBox = styled(motion.div)`
   flex-flow: column nowrap;
   border: 2px solid rgba(255, 255, 255, 0.4);
   max-width: 600px;
+  height: 370px;
   padding: 2vh 2vw;
   margin: 0 auto;
+  background: rgba(140, 150, 140, 0.2);
+  border-radius: 5%
 `;
 
-const DimBackground = styled(motion.section)`
+const DimBackground = styled(motion.div)`
   position: fixed;
   top: 0;
   left: 0;

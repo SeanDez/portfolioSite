@@ -11,8 +11,8 @@ a:hover {
   color: #627C85;
 }
 
-section:not(:first-child) {
-  margin-top: 50px;
+section:not(:nth-child(2)) {
+  margin-top: 70px;
 }
 
 .App {
