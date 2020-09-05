@@ -26,25 +26,30 @@ export default (props: PropsShape) => {
         animate='opaque'
       >
         <Switch>
-          {/* Routes to sub-views */}
           <Route path={`${useRouteMatch().path}/call-track-voipms`}>
             <CallTrackVoipMs GithubLogo={GithubLogo} />
-          </Route>
+          </Route>         
+        
           <Route path={`${useRouteMatch().path}/foreign-sentence-repeater`}>
             <ForeignSentenceRepeater GithubLogo={GithubLogo} />
           </Route>
+          
           <Route path={`${useRouteMatch().path}/asana-task-repeater`}>
             <AsanaTaskRepeater GithubLogo={GithubLogo} />
-          </Route>
+          </Route>              
+        
           <Route path={`${useRouteMatch().path}/this-site`}>
             <ThisSite GithubLogo={GithubLogo} />
-          </Route>
-          {/* Nav links on category view */}
+          </Route>         
+
+            {/* Nav links on category view */}
+       
           <ItemPreviews 
             previewData={Object.values(navigationData)} 
             portfolioRoute={useRouteMatch().url} 
           />
         </Switch>
+        
       </StyledSection>
   )
 }

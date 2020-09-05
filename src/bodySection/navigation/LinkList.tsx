@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import ComponentData  from '../ComponentDataInterface';
-
+import { motion } from 'framer-motion';
 import SingleLinkListItem from './SingleLinkListItem';
+
 
 export default (props: { jsxData: Record<string, ComponentData> }) => {
   return (
@@ -14,7 +15,7 @@ export default (props: { jsxData: Record<string, ComponentData> }) => {
   )
 } 
 
-const NavList = styled.ul`
+const NavList = styled(motion.ul)`
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;

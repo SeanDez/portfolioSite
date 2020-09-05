@@ -30,10 +30,6 @@ export default function (props: PropsShape) {
         </LogoContainer>
       </section>
 
-      <section>
-        <h3 className="warningText">Not Complete. Currently about 80% done</h3>
-      </section>
-
       <section className="teaser">
         <p>My girlfriend is Thai. After breezing through an Intro to Spanish course and never feeling behind the curve, the low repetition of Thai language courses left me feeling like a well designed translation app could do a lot better.</p>
 
@@ -68,18 +64,10 @@ export default function (props: PropsShape) {
         <ol>
           <li>The sentence in the foreign language, and then in English</li>
           <li>Every foreign word in the sentence, and its accompanying English definition</li>
-          <li>A repeat of track 1.</li>
+          <li>A repeat of track one.</li>
         </ol>
 
         <p>There is also a variable pause based on the amount of words each sentence has, giving a longer time to think for longer sentences.</p>
-      </section>
-
-      <section>
-        <h3>What is left before a working version</h3>
-
-        <p>The text translations, text to speech, and file saving are all working. But on the concatenation step, ffmpeg is cutting off a part of the file on both ends, wrecking the concatenated audios. It will take me some time to find a fix or workaround.</p>
-
-        <p>Once that issue is resolved, the project is complete after final bug testing.</p>
       </section>
 
       <section>
@@ -87,8 +75,6 @@ export default function (props: PropsShape) {
 
         <ul>
           <li>Running the entire configuration process using a standardized set of classes, polymorphically designed to allow for duck typing their properties and functions inside of a reduce function that gathers all the config data.</li>
-
-          <li>Using the ReturnType type constructor to infer a return type from some Google Translate classes that had no documentation for some obscure instance methods.</li>
 
           <li>The planning phase. Working down from theoretical objects, to program flow, to properties/methods. Finally, designing a theoretical "happy path" that captured 70% of the main logic (rest was conjured up as I got closer to the problem)</li>
         </ul>
