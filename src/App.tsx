@@ -13,10 +13,12 @@ import About from './bodySection/About';
 import Contact from './bodySection/Contact';
 
 import nightPlanetBoat from './images/nightPlanetBoat.jpg';
-import repeaterGearVisual from './images/repeater-automation1.png';
-import foreignCliffHouse from './images/foreign-cliffHouse.jpg';
-import copperRotaryPhone from './images/calltrack-rotaryphone2.jpg';
+import officeStare from './images/office-window-stare.jpg';
+import templeKyoto from './images/temple-kyoto-japan.jpg';
 import railwayTunnel from './images/railway-tunnel.jpg';
+import autumnGarden from './images/autumn-garden.jpg';
+import summerVacationFloor from './images/summer-vacation-floor.jpg';
+import eveningForest from './images/evening-forest.jpg';
 
 const bodyViews: Record<string, ComponentData> = {
   cover: { name: "Home", slug: '/' },
@@ -27,13 +29,13 @@ const bodyViews: Record<string, ComponentData> = {
 
 const backgrounds = {
   '/': nightPlanetBoat,
-  '/portfolio': nightPlanetBoat,
-  '/about': nightPlanetBoat,
-  '/contact': nightPlanetBoat,
+  '/portfolio': summerVacationFloor,
+  '/about': autumnGarden,
+  '/contact': eveningForest,
   '/portfolio/prospector': railwayTunnel,
-  '/portfolio/foreign-sentence-repeater': foreignCliffHouse,
+  '/portfolio/foreign-sentence-repeater': templeKyoto,
   '/portfolio/this-site': nightPlanetBoat,
-  '/portfolio/asana-task-repeater': repeaterGearVisual
+  '/portfolio/asana-task-repeater': officeStare
 }
 
 
