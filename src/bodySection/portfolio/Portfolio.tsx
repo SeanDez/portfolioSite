@@ -7,7 +7,7 @@ import navigationData from "../../data/navigation";
 import ItemPreviews from './ItemPreviews';
 
 import GithubLogo from '../../images/GitHub-WordLogo.svg';
-import CallTrackVoipMs from './CallTrackVoipMs';
+import Prospector from './Prospector';
 import ForeignSentenceRepeater from './TranslatorCli';
 import ThisSite from './ThisSite';
 import AsanaTaskRepeater from './AsanaTaskRepeater';
@@ -26,8 +26,8 @@ export default (props: PropsShape) => {
         animate='opaque'
       >
         <Switch>
-          <Route path={`${useRouteMatch().path}/call-track-voipms`}>
-            <CallTrackVoipMs GithubLogo={GithubLogo} />
+          <Route path={`${useRouteMatch().path}/prospector`}>
+            <Prospector GithubLogo={GithubLogo} />
           </Route>         
         
           <Route path={`${useRouteMatch().path}/foreign-sentence-repeater`}>

@@ -16,6 +16,7 @@ import nightPlanetBoat from './images/nightPlanetBoat.jpg';
 import repeaterGearVisual from './images/repeater-automation1.png';
 import foreignCliffHouse from './images/foreign-cliffHouse.jpg';
 import copperRotaryPhone from './images/calltrack-rotaryphone2.jpg';
+import railwayTunnel from './images/railway-tunnel.jpg';
 
 const bodyViews: Record<string, ComponentData> = {
   cover: { name: "Home", slug: '/' },
@@ -29,7 +30,7 @@ const backgrounds = {
   '/portfolio': nightPlanetBoat,
   '/about': nightPlanetBoat,
   '/contact': nightPlanetBoat,
-  '/portfolio/call-track-voipms': copperRotaryPhone,
+  '/portfolio/prospector': railwayTunnel,
   '/portfolio/foreign-sentence-repeater': foreignCliffHouse,
   '/portfolio/this-site': nightPlanetBoat,
   '/portfolio/asana-task-repeater': repeaterGearVisual

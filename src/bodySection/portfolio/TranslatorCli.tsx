@@ -16,13 +16,15 @@ export default function (props: PropsShape) {
     <div>
       <section>
         <h2>Translation App</h2>
+        <h5>Node.js, Google Cloud</h5>
+        <p>A CLI app that uses Google Cloud to turn a sentence file into a foreign language audio-mini course (detailed below).</p>
       </section>
 
       <section>
         <LogoContainer>
           <a 
             target="_blank" 
-            href="https://github.com/SeanDez/portfolioSite"
+            href="https://github.com/SeanDez/foreignSentenceRepeater"
             rel='noopener noreferrer' // for security
           >
             <FittedImage src={props.GithubLogo} alt='Github logo' />
@@ -31,6 +33,8 @@ export default function (props: PropsShape) {
       </section>
 
       <section className="teaser">
+        <h3>Project Rationale</h3>
+
         <p>My girlfriend is Thai. After breezing through an Intro to Spanish course and never feeling behind the curve, the low repetition of Thai language courses left me feeling like a well designed translation app could do a lot better.</p>
 
         <p>My app was designed for learning, as opposed to making big claims about how many words the program covers, which is where I think a lot of courses in obscure languages go wrong. loosely follows the Pimsleur model of training by stating them in the foreign language, then defining them, then putting them together in a sentence.</p>
@@ -81,7 +85,7 @@ export default function (props: PropsShape) {
       </section>
 
       <section>
-        <h3>With more time I'd add</h3>
+        <h3>With more time I'd add...</h3>
 
         <ul>
           <li>Space detection for automatic parsing of foreign words. Most languages do use spaces to distinguish words. Because I built this app for my own use case, Thai, which uses spaces to separate sentences, space detection was not a priority feature. But others would probably find it helpful, so I'll at it at some point.</li>

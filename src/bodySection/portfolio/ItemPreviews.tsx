@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import StyledLink from '../../shared/StyledLink';
 import ComponentData from '../ComponentDataInterface';
 
-const listAnimations = {
+const listAnimations: Variants = {
   staggerIn: {
     delayChildren: 0.5,
     staggerChildren: 0.2
