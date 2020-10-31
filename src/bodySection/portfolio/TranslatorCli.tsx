@@ -49,6 +49,7 @@ export default function (props: PropsShape) {
           maxContainerWidth="400px"
           imageSrc={ConfigScreenshot}
           imageAlt="The beginning configuration step"
+          margin='2vh 2vw'
         />
 
         <p>Then after filling out the sentences to be built in a sentences.txt file, the build process is run next by running the script and passing <code>--build</code> or <code>-b</code>.</p>
@@ -61,6 +62,7 @@ export default function (props: PropsShape) {
           maxContainerWidth="400px"
           imageSrc={WordDefinitionScreenshoot}
           imageAlt="The word/definition selection screen"
+          margin='2vh 2vw'
         />
         
         <p>After all words in the sentence are gathered, a subfolder of <code>/audioCourse</code> is built with 3 tracks:</p>

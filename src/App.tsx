@@ -19,6 +19,7 @@ import railwayTunnel from './images/railway-tunnel.jpg';
 import autumnGarden from './images/autumn-garden.jpg';
 import summerVacationFloor from './images/summer-vacation-floor.jpg';
 import eveningForest from './images/evening-forest.jpg';
+import kidsDoingHomework from './images/kids-doing-homework.jpg';
 
 const bodyViews: Record<string, ComponentData> = {
   cover: { name: "Home", slug: '/' },
@@ -35,7 +36,7 @@ const backgrounds = {
   '/portfolio/prospector': railwayTunnel,
   '/portfolio/foreign-sentence-repeater': templeKyoto,
   '/portfolio/this-site': nightPlanetBoat,
-  '/portfolio/asana-task-repeater': officeStare
+  '/portfolio/asana-task-repeater': kidsDoingHomework,
 }
 
 
@@ -100,7 +101,7 @@ const OuterContainer = styled.div<ExtraContainerProps>`
   background-image: url(${props => props.backgroundImage});
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 100vw rgba(10, 10, 10, 0.8);
+  box-shadow: inset 2000px 2000px 0 0 rgba(0, 0, 0, 0.9);
   position: relative;
   padding: 2vh 2vw;
   max-width: 1200px;

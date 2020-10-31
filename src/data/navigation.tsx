@@ -7,7 +7,7 @@ export default {
   asanaTaskRepeater: { 
     name: "Asana Task Repeater", 
     slug: '/asana-task-repeater' ,
-    previewText: "Duplicates common project tasks according to a ruleset"
+    previewText: "Puts Asana task repetition on auto-pilot"
   },
   thisSite: { 
     name: "This Site", 
@@ -17,7 +17,7 @@ export default {
   foreignSentenceRepeater: { 
     name: "Foreign Sentence Repeater", 
     slug: "/foreign-sentence-repeater",
-    previewText: "Turns a list of English sentences into a folder of audio lessons"
+    previewText: "Turns a list of English sentences into a mini foreign language course"
   },
   prospector: { 
     name: "Prospector", 

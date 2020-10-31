@@ -6,21 +6,18 @@ interface PropsShape {
   maxContainerWidth: string,
   imageSrc: string,
   imageAlt: string,
-  style?: object | undefined
+  style?: object | undefined,
+  margin: string
 }
 
-export default (props: PropsShape) => (
-  <Container 
-    maxContainerWidth={props.maxContainerWidth} 
+export default ({ style, margin, maxContainerWidth, imageSrc, imageAlt }: PropsShape) => (
+  <div 
     style={{
-      ...props.style,
-      margin: '0 auto'
+      ...style,
+      margin,
+      maxWidth: maxContainerWidth,
     }}
   >
-    <FittedImage src={props.imageSrc} alt={props.imageAlt} />
-  </Container>
+    <FittedImage src={imageSrc} alt={imageAlt} />
+  </div>
 )
-
-const Container = styled.div<Pick<PropsShape, 'maxContainerWidth'>>`
-  max-width: ${props => props.maxContainerWidth};
-`

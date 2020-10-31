@@ -1,6 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
 import LogoContainer from '../../shared/LogoContainer';
 import FittedImage from '../../shared/FittedImage';
+import ImageContainer from '../../shared/ImageContainer';
+
+import visitorViewTop from '../../images/atr/visitor-view-top.png';
+import repeatRules from '../../images/atr/repeatRules.png';
 
 interface PropsShape {
   GithubLogo: string
@@ -15,7 +20,7 @@ export default function (props: PropsShape) {
 
       <p>Automates repetitive task posting on the Asana platform.</p>
 
-      <div>
+      <FlexRow maxWidth='300px'>
         <div>
           <h4>Front End</h4>
           <LogoContainer>
@@ -40,7 +45,7 @@ export default function (props: PropsShape) {
             </a>
         </LogoContainer>
         </div>
-      </div>
+      </FlexRow>
 
       <h3>Technical Highlights</h3>
 
@@ -50,6 +55,23 @@ export default function (props: PropsShape) {
         <li>Responsive design on front end without use of media queries</li>
         <li>Automated backend cron process to control user defined tasks</li>
       </ul>
+
+      <h3>Screen Shots</h3>
+
+      <FlexRow maxWidth='90vw'>
+        <ImageContainer
+          imageSrc={visitorViewTop}
+          imageAlt="Visitor view of Asana Task Repeater"
+          maxContainerWidth='none'
+          margin='2vh 2vw'
+        />
+        <ImageContainer
+          imageSrc={repeatRules}
+          imageAlt="Repeat Rules table of Asana Task Repeater"
+          maxContainerWidth='none'
+          margin='2vh 2vw'
+        />
+      </FlexRow>
 
       <h3>Commentary</h3>
 
@@ -67,3 +89,13 @@ export default function (props: PropsShape) {
     </section>
   )
 }
+
+
+interface FlexRowProps { maxWidth: string }
+
+const FlexRow = styled.div<FlexRowProps>`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: ${({ maxWidth }: FlexRowProps) => maxWidth};
+`;

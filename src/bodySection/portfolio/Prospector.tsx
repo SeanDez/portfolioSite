@@ -55,12 +55,14 @@ export default function (props: PropsShape) {
           maxContainerWidth="400px"
           imageSrc={ConfigScreenshot}
           imageAlt="The beginning configuration step"
+          margin='2vh 2vw'
         />
 
         <ImageContainer
           maxContainerWidth="400px"
           imageSrc={WordDefinitionScreenshoot}
           imageAlt="The word/definition selection screen"
+          margin='2vh 2vw'
         />
         
       </section>
