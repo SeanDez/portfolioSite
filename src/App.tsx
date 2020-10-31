@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
 
 import ComponentData from './bodySection/ComponentDataInterface';
+import Footer from './footer/Footer';
 
 import Nav from './bodySection/navigation/Nav';
 import Cover from './bodySection/Cover';
@@ -86,7 +87,9 @@ function App(props: any) {
             </Switch>
           </AnimatePresence>
         </main>
-        <footer></footer>
+        <footer>
+          <Footer />
+        </footer>
     </OuterContainer>
   );
 }
@@ -101,7 +104,7 @@ const OuterContainer = styled.div<ExtraContainerProps>`
   background-image: url(${props => props.backgroundImage});
   background-position: center;
   background-size: cover;
-  box-shadow: inset 2000px 2000px 0 0 rgba(0, 0, 0, 0.9);
+  box-shadow: inset 2000px 2000px 0 0 rgba(0, 0, 0, 0.8);
   position: relative;
   padding: 2vh 2vw;
   max-width: 1200px;

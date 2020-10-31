@@ -4,8 +4,7 @@ import LogoContainer from "../../shared/LogoContainer";
 import FittedImage from "../../shared/FittedImage";
 import ImageContainer from '../../shared/ImageContainer';
 
-import ConfigScreenshot from "../../images/foreignSentenceRepeater/config_step_1.jpg";
-import WordDefinitionScreenshoot from "../../images/foreignSentenceRepeater/build_step_1_configure_words.jpg";
+import filledExample from "../../images/prospector/filled.jpg";
 import { FlexRow } from '../../shared/FlexRow';
 
 interface PropsShape {
@@ -65,24 +64,16 @@ export default function (props: PropsShape) {
 
         <ol>
           <li>Login is handled via Basic authenciation</li>
-          <li>A dashboard with single textarea is used to type an interesting potential contact's information.</li>
-          <li>The infomation is parsed by double space delimited, then turned into a Hubspot contact, and also emailed.</li>
+          <li>A dashboard with single textarea is used to type an interesting potential contact's information</li>
+          <li>The infomation is parsed by double space delimiter, then turned into a Hubspot contact. Finally, it is emailed. This is all done with a single Hotkey press (CTRL + ENTER)</li>
         </ol>
 
         <ImageContainer
-          maxContainerWidth="400px"
-          imageSrc={ConfigScreenshot}
-          imageAlt="The beginning configuration step"
+          maxContainerWidth="800px"
+          imageSrc={filledExample}
+          imageAlt="Prospector front end, filled out"
           margin='2vh 2vw'
         />
-
-        <ImageContainer
-          maxContainerWidth="400px"
-          imageSrc={WordDefinitionScreenshoot}
-          imageAlt="The word/definition selection screen"
-          margin='2vh 2vw'
-        />
-        
       </section>
  
     </div>
