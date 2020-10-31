@@ -1,4 +1,6 @@
 import React from 'react';
+import LogoContainer from '../../shared/LogoContainer';
+import FittedImage from '../../shared/FittedImage';
 
 interface PropsShape {
   GithubLogo: string
@@ -12,6 +14,33 @@ export default function (props: PropsShape) {
       <h5>Typescript, React, Express, PostgreSQL</h5>
 
       <p>Automates repetitive task posting on the Asana platform.</p>
+
+      <div>
+        <div>
+          <h4>Front End</h4>
+          <LogoContainer>
+            <a 
+              target="_blank" 
+              href="https://github.com/SeanDez/portfolioSite"
+              rel='noopener noreferrer' // for security
+            >
+              <FittedImage src={props.GithubLogo} alt='Github logo' />
+            </a>
+        </LogoContainer>
+        </div>
+        <div>
+          <h4>Back End</h4>
+          <LogoContainer>
+            <a 
+              target="_blank" 
+              href="https://github.com/SeanDez/portfolioSite"
+              rel='noopener noreferrer' // for security
+            >
+              <FittedImage src={props.GithubLogo} alt='Github logo' />
+            </a>
+        </LogoContainer>
+        </div>
+      </div>
 
       <h3>Technical Highlights</h3>
 
@@ -30,7 +59,7 @@ export default function (props: PropsShape) {
         
       <p>Phase one of this app was dedicated solely to handling the repetitive task of duplicating tasks that needed to be repeated on a regular schedule</p>
 
-      <h3>Planned additions</h3>
+      <h3>Planned Additions</h3>
 
       <p>Eventually I will widen the scope of this project to include phone call tracking for phone numbers from Voip.ms. This will pivot the application from a singular task post automator, into a marketing campaign automation and analysis platform.</p>
         

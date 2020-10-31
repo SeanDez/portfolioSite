@@ -33,9 +33,13 @@ export default function (props: PropsShape) {
       </section>
 
       <section className="teaser">
-        <h3>Project Rationale</h3>
+        <h3>Motivation</h3>
 
-        <p>My Internship ended abruptly during Covid. To bolster my efforts I wrote this app to help me streamline outreach to people at interesting small companies that I wast interested in applying to.</p>
+        <p>My Internship ended abruptly during Covid. Entering the worst job market in 100 years (at the time), I thought it would be wise to make my job hunt more efficient. Less time on mechanics, more time studying companies and their needs, which is what employers like to see.</p>
+
+        <p>Prospector was designed to let me add contacts from interesting companies and efficiently email them, from a single textarea. </p> 
+        
+        <p>This was not my hardest project, it may have been my easiest. But I judge my tools on their immediate usefulness and Prospector is my sidearm.</p>
       </section>
 
       <section>

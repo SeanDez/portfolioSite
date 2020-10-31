@@ -14,15 +14,17 @@ export default (props: PropsShape) => {
       <h5>React.js, Styled Components, Framer Motion</h5>
       <p>Built with React.js Typescript. CSS via Styled Components. Animations using Framer Motion.</p>
 
-      <LogoContainer>
-          <a 
-            target="_blank" 
-            href="https://github.com/SeanDez/portfolioSite"
-            rel='noopener noreferrer' // for security
-          >
-            <FittedImage src={props.GithubLogo} alt='Github logo' />
-          </a>
-        </LogoContainer>
+      <div>
+        <LogoContainer>
+            <a 
+              target="_blank" 
+              href="https://github.com/SeanDez/portfolioSite"
+              rel='noopener noreferrer' // for security
+            >
+              <FittedImage src={props.GithubLogo} alt='Github logo' />
+            </a>
+          </LogoContainer>
+      </div>
 
       <h3>Design Highlights</h3>
 
