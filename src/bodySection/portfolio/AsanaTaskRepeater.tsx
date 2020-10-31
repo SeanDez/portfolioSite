@@ -51,7 +51,7 @@ export default function (props: PropsShape) {
 
       <ul>
         <li>Password-less sign in using Asana.</li>
-        <li>OAuth process, handled manually front to end</li>
+        <li>OAuth process handled manually, front to end</li>
         <li>Responsive design on front end without use of media queries</li>
         <li>Automated backend cron process to control user defined tasks</li>
       </ul>
@@ -75,11 +75,9 @@ export default function (props: PropsShape) {
 
       <h3>Commentary</h3>
 
-      <p>It doesn't make sense to hire a full stack developer without a full stack app, so here is the one I like to showcase.</p>
-
-      <p>Like every app on my portfolio, this one has a real world use case. I loved using Asana as an intern and sought to use it for a side project I needed some help with. I just didn't like having to constantly manage it when my input wasn't needed.</p>
+      <p>Like every app on my portfolio, this app has a real world use case. I learned about Asana as an intern and thought it would be perfect for managing a virtual assistant for a side project unrelated to web development. I just didn't like having to constantly manage the manual task additions. My input wasn't needed, so it seemed like a great place to add automation.</p>
         
-      <p>Phase one of this app was dedicated solely to handling the repetitive task of duplicating tasks that needed to be repeated on a regular schedule</p>
+      <p>Phase one of this app was dedicated solely to handling the repetitive task of duplicating tasks that needed to be repeated on a regular schedule. I've done it by accessing the Asana API, allowing for repeat rules to save to PostgreSQL database, and then enforcing creating of new tasks using a cron job on the server, which runs my task checking and duplication logic.</p>
 
       <h3>Planned Additions</h3>
 
