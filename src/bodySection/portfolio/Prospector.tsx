@@ -6,6 +6,7 @@ import ImageContainer from '../../shared/ImageContainer';
 
 import ConfigScreenshot from "../../images/foreignSentenceRepeater/config_step_1.jpg";
 import WordDefinitionScreenshoot from "../../images/foreignSentenceRepeater/build_step_1_configure_words.jpg";
+import { FlexRow } from '../../shared/FlexRow';
 
 interface PropsShape {
   GithubLogo: string
@@ -21,15 +22,32 @@ export default function (props: PropsShape) {
       </section>
 
       <section>
-        <LogoContainer>
-          <a 
-            target="_blank" 
-            href="https://github.com/SeanDez/foreignSentenceRepeater"
-            rel='noopener noreferrer' // for security
-          >
-            <FittedImage src={props.GithubLogo} alt='Github logo' />
-          </a>
-        </LogoContainer>
+        <FlexRow maxWidth='300px'>
+          <div>
+            <h4>Front End</h4>
+            <LogoContainer>
+              <a 
+                target="_blank" 
+                href="https://github.com/SeanDez/prospector_frontend"
+                rel='noopener noreferrer' // for security
+              >
+                <FittedImage src={props.GithubLogo} alt='Github logo' />
+              </a>
+          </LogoContainer>
+          </div>
+          <div>
+            <h4>Back End</h4>
+            <LogoContainer>
+              <a 
+                target="_blank" 
+                href="https://github.com/SeanDez/prospector_backend"
+                rel='noopener noreferrer' // for security
+              >
+                <FittedImage src={props.GithubLogo} alt='Github logo' />
+              </a>
+          </LogoContainer>
+          </div>
+        </FlexRow>
       </section>
 
       <section className="teaser">

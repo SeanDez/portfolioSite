@@ -1,11 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 import LogoContainer from '../../shared/LogoContainer';
 import FittedImage from '../../shared/FittedImage';
 import ImageContainer from '../../shared/ImageContainer';
 
 import visitorViewTop from '../../images/atr/visitor-view-top.png';
 import repeatRules from '../../images/atr/repeatRules.png';
+import { FlexRow } from '../../shared/FlexRow';
 
 interface PropsShape {
   GithubLogo: string
@@ -26,7 +26,7 @@ export default function (props: PropsShape) {
           <LogoContainer>
             <a 
               target="_blank" 
-              href="https://github.com/SeanDez/portfolioSite"
+              href="https://github.com/SeanDez/asana_task_repeater_frontend"
               rel='noopener noreferrer' // for security
             >
               <FittedImage src={props.GithubLogo} alt='Github logo' />
@@ -38,7 +38,7 @@ export default function (props: PropsShape) {
           <LogoContainer>
             <a 
               target="_blank" 
-              href="https://github.com/SeanDez/portfolioSite"
+              href="https://github.com/SeanDez/asanaTaskRepeaterBackend"
               rel='noopener noreferrer' // for security
             >
               <FittedImage src={props.GithubLogo} alt='Github logo' />
@@ -89,11 +89,3 @@ export default function (props: PropsShape) {
 }
 
 
-interface FlexRowProps { maxWidth: string }
-
-const FlexRow = styled.div<FlexRowProps>`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  max-width: ${({ maxWidth }: FlexRowProps) => maxWidth};
-`;
