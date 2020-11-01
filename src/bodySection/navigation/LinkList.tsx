@@ -12,12 +12,12 @@ export default (props: { jsxData: Record<string, ComponentData> }) => {
       { Object.values(props.jsxData).map((nameAndSlug: ComponentData, index: number) => (
         <SingleLinkListItem linkData={nameAndSlug} key={index} />
       )) }
-      <a href={require('../../data/Resume-Sean-Dezoysa.pdf')} target="_blach">
+      <a href={require('../../data/Resume-Sean-Dezoysa.docx')} target="_blach">
         <StyledButton
           isActive={false}
          whileHover={{ textShadow: '0px 0px 2px rgb(255, 255, 255)' }}
         >
-          Resume PDF
+          Resume (DOCX)
         </StyledButton>
       </a>
     </NavList>
