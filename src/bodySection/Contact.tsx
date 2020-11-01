@@ -49,7 +49,9 @@ export default (props: PropsShape) => {
           to='/'
           style={{ alignSelf: 'flex-end' }}
         >
-          <StyledButton>X [CLOSE]</StyledButton>
+          <StyledButton
+            isActive={false}
+          >X [CLOSE]</StyledButton>
         </StyledLink>
         <iframe
           height="700" 

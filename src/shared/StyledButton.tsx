@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-const StyledButton = styled(motion.button)`
-  background: none;
+interface ButtonProps { isActive: boolean }
+
+const StyledButton = styled(motion.button)<ButtonProps>`
+  background: ${({ isActive }: ButtonProps) => isActive ? 'rgba(204, 255, 0, 0.15)' : 'none'};
   border: 1px solid rgba(255, 255, 255, .4);
   color: white;
   padding: 10px 20px;

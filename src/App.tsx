@@ -26,18 +26,18 @@ const bodyViews: Record<string, ComponentData> = {
   cover: { name: "Home", slug: '/' },
   portfolio: { name: "Portfolio", slug: "/portfolio" },
   about: { name: "About", slug: '/about' },
-  contact: { name: "Contact", slug: '/contact' }
+  contact: { name: "Contact", slug: '/contact' },
 }
 
 const backgrounds = {
   '/': nightPlanetBoat,
   '/portfolio': summerVacationFloor,
   '/about': autumnGarden,
-  '/contact': eveningForest,
-  '/portfolio/prospector': railwayTunnel,
+  '/contact': nightPlanetBoat,
+  '/portfolio/prospector': summerVacationFloor,
   '/portfolio/foreign-sentence-repeater': templeKyoto,
   '/portfolio/this-site': nightPlanetBoat,
-  '/portfolio/asana-task-repeater': kidsDoingHomework,
+  '/portfolio/asana-task-repeater': summerVacationFloor,
 }
 
 
