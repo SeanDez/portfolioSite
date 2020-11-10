@@ -16,8 +16,8 @@ export default function (props: PropsShape) {
     <div>
       <section>
         <h2>Prospector</h2>
-        <h5>React, Typescript, Express, APIs (Hubspot, AWS, Mailgun)</h5>
-        <p>Turns a single textarea into a contact adder (Hubspot) and Emailer (AWS and Mailgun).</p>
+        <h5>React, Typescript, Express, APIs (Hubspot, Mailgun)</h5>
+        <p>Turns a single textarea into a contact adder (Hubspot) and Emailer.</p>
       </section>
 
       <section>

@@ -16,15 +16,14 @@ export default (props: PropsShape) => {
       <NavContainer>
         <LinkList jsxData={props.bodyViews} />
       </NavContainer>
-      <Spacer></Spacer>
     </nav>
   )
 }
 
 const NavContainer = styled.div`
-  /* position: fixed;
+  position: sticky;
+  top: 0;
   width: 90vw;
-  border: 2px dashed red; */
 `;
 
 const Spacer = styled.div`
