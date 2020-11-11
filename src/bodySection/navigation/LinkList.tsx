@@ -34,7 +34,6 @@ const NavList = styled(motion.ul)`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  border: 2px dashed yellow;
   
   > * {
     margin: 3px 0;
