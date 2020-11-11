@@ -23,7 +23,7 @@ export default (props: PropsShape) => {
 const NavContainer = styled.div`
   position: sticky;
   top: 0;
-  width: 90vw;
+  width: 90%;
 `;
 
 const Spacer = styled.div`

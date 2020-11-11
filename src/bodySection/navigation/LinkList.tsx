@@ -15,7 +15,12 @@ export default (props: { jsxData: Record<string, ComponentData> }) => {
       <a href={require('../../data/Resume-Sean-Dezoysa.docx')} target="_blach">
         <StyledButton
           isActive={false}
-         whileHover={{ textShadow: '0px 0px 2px rgb(255, 255, 255)' }}
+          initial={{ scale: 1 }}
+         whileHover={{ 
+           textShadow: '0px 0px 2px rgb(255, 255, 255)',
+           scale: 1.1
+          }}
+          whileTap={{ scale: 0.9 }}
         >
           Resume (DOCX)
         </StyledButton>
@@ -29,6 +34,7 @@ const NavList = styled(motion.ul)`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  border: 2px dashed yellow;
   
   > * {
     margin: 3px 0;
