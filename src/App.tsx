@@ -31,13 +31,13 @@ const bodyViews: Record<string, ComponentData> = {
 
 const backgrounds = {
   '/': nightPlanetBoat,
-  '/portfolio': summerVacationFloor,
+  '/portfolio': nightPlanetBoat,
   '/about': autumnGarden,
   '/contact': nightPlanetBoat,
-  '/portfolio/prospector': summerVacationFloor,
+  '/portfolio/prospector': nightPlanetBoat,
   '/portfolio/foreign-sentence-repeater': templeKyoto,
   '/portfolio/this-site': nightPlanetBoat,
-  '/portfolio/asana-task-repeater': summerVacationFloor,
+  '/portfolio/asana-task-repeater': nightPlanetBoat,
 }
 
 
