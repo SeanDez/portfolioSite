@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import SingleLinkListItem from './SingleLinkListItem';
 import StyledButton from '../../shared/StyledButton';
 
+const resumeGoogleDoc = 'https://docs.google.com/document/d/1B04GszEveekuiB2JWZwvgZTWFpWx2J5xlsTFNHbkuFQ/edit?usp=sharing';
 
 export default (props: { jsxData: Record<string, ComponentData> }) => {
   return (
@@ -12,7 +13,7 @@ export default (props: { jsxData: Record<string, ComponentData> }) => {
       { Object.values(props.jsxData).map((nameAndSlug: ComponentData, index: number) => (
         <SingleLinkListItem linkData={nameAndSlug} key={index} />
       )) }
-      <a href={require('../../data/Resume-Sean-Dezoysa.docx')} target="_blach">
+      <a href="https://docs.google.com/document/d/1B04GszEveekuiB2JWZwvgZTWFpWx2J5xlsTFNHbkuFQ/edit?usp=sharing" target="_blach">
         <StyledButton
           isActive={false}
           initial={{ scale: 1 }}
@@ -22,7 +23,7 @@ export default (props: { jsxData: Record<string, ComponentData> }) => {
           }}
           whileTap={{ scale: 0.9 }}
         >
-          Resume (DOCX)
+          Resume
         </StyledButton>
       </a>
     </NavList>

@@ -14,13 +14,8 @@ import About from './bodySection/About';
 import Contact from './bodySection/Contact';
 
 import nightPlanetBoat from './images/nightPlanetBoat.jpg';
-import officeStare from './images/office-window-stare.jpg';
 import templeKyoto from './images/temple-kyoto-japan.jpg';
-import railwayTunnel from './images/railway-tunnel.jpg';
 import autumnGarden from './images/autumn-garden.jpg';
-import summerVacationFloor from './images/summer-vacation-floor.jpg';
-import eveningForest from './images/evening-forest.jpg';
-import kidsDoingHomework from './images/kids-doing-homework.jpg';
 
 const bodyViews: Record<string, ComponentData> = {
   cover: { name: "Home", slug: '/' },

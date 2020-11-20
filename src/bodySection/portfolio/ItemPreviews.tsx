@@ -4,22 +4,9 @@ import { motion, Variants } from 'framer-motion';
 import StyledLink from '../../shared/StyledLink';
 import ComponentData from '../ComponentDataInterface';
 
-// const listAnimations: Variants = {
-//   staggerIn: {
-//     delayChildren: 0.5,
-//     staggerChildren: 0.2
-//   },
-//   closed: {
-//     staggerChildren: 0.2
-//   },
-// }
-
 export default function(props: { previewData: ComponentData[], portfolioRoute: string }) {
   return (
-    <OuterList
-      // variants={listAnimations}
-      // animate="staggerIn"
-    >
+    <OuterList>
       {
         props.previewData.map((singlePreview, index) => (
           <motion.li>
