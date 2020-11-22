@@ -52,7 +52,7 @@ export default function (props: PropsShape) {
       <section className="teaser">
         <h3>Motivation</h3>
 
-        <p>My Internship ended abruptly during Covid. Entering the worst job market in 100 years (at the time), I thought it would be wise to make my job hunt more efficient. Less time on mechanics, more time studying companies and their needs, which is what employers like to see.</p>
+        <p>My previous position ended abruptly during Covid. Entering the worst job market in 100 years (at the time), I thought it would be wise to make my job hunt more efficient. Less time on mechanics, more time studying companies and their needs, which is what employers like to see.</p>
 
         <p>Prospector was designed to let me add contacts from interesting companies and efficiently email them, from a single textarea. </p> 
         
