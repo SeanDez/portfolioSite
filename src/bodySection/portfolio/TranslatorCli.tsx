@@ -37,7 +37,7 @@ export default function (props: PropsShape) {
 
         <p>My girlfriend is Thai. After breezing through an Intro to Spanish course and never feeling behind the curve, the low repetition of Thai language courses left me feeling like a well designed translation app could do a lot better.</p>
 
-        <p>My app was designed for learning, as opposed to making big claims about how many words the program covers, which is where I think a lot of courses in obscure languages go wrong. loosely follows the Pimsleur model of training by stating them in the foreign language, then defining them, then putting them together in a sentence.</p>
+        <p>My app was designed for learning, as opposed to making big claims about how many words the program covers, which is where I think a lot of courses in obscure languages go wrong. The repetition style loosely follows the Pimsleur model of training by stating words in the target (foreign) language, defining them in English, then putting them together in a full sentence. This builds both a word and sentence level contextual understanding through ongoing practice.</p>
       </section>
 
       <section>
@@ -90,9 +90,9 @@ export default function (props: PropsShape) {
         <h3>With more time I'd add...</h3>
 
         <ul>
-          <li>Space detection for automatic parsing of foreign words. Most languages do use spaces to distinguish words. Because I built this app for my own use case, Thai, which uses spaces to separate sentences, space detection was not a priority feature. But others would probably find it helpful, so I'll at it at some point.</li>
+          <li>Space detection for automatic parsing of foreign words. Most languages do use spaces to distinguish words. Because I built this app for my own use case, Thai, which uses only spaces to separate sentences (but not words), space detection was not a priority feature. But others would probably find it helpful, so I'll add it at some point.</li>
 
-          <li>Service layer separation. When I first built this project, I didn't think to design it in a way to make swapping translation and text-to-speech services fairly easy. But a more senior programmer suggested it would be helpful to avoid vendor lock-in. Google Cloud is free for quite a lot of requests so this is not a high priority, but to practice my own system design skills I may take it up later. It would require a massive rewrite of the entire program though.</li>
+          <li>Service layer separation. When I first built this project, I didn't think to design it in a way to make swapping translation and text-to-speech services fairly easy. But a more senior programmer suggested it would be helpful to avoid vendor lock-in. Google Cloud is free for quite a lot of requests so this is not a high priority, but to practice my own system design skills I may separate the service layer in the future.</li>
         </ul>
       </section>
  

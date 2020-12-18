@@ -10,89 +10,97 @@
 \red255\green255\blue255;
 \red0\green0\blue255;}
 {\stylesheet
-{\s6\fi-432\li720\sbasedon28 Contents 1;}
-{\s7\fi-432\li1440\sbasedon28 Contents 2;}
-{\s1\fi-432\li720\sbasedon28 Arrowhead List;}
-{\s27\fi-432\li720\sbasedon28 Lower Roman List;}
-{\s29\tx431\sbasedon20 Numbered Heading 1;}
-{\s30\tx431\sbasedon21 Numbered Heading 2;}
-{\s12\fi-432\li720\sbasedon28 Diamond List;}
-{\s9\fi-432\li2880\sbasedon28 Contents 4;}
-{\s8\fi-432\li2160\sbasedon28 Contents 3;}
-{\s31\tx431\sbasedon22 Numbered Heading 3;}
-{\s32\fi-432\li720\sbasedon28 Numbered List;}
+{\s6\fi-431\li720\sbasedon28\snext28 Contents 1;}
+{\s7\fi-431\li1440\sbasedon28\snext28 Contents 2;}
+{\s1\fi-431\li720\sbasedon28 Arrowhead List;}
+{\s27\fi-431\li720\sbasedon28 Lower Roman List;}
+{\s29\tx431\sbasedon20\snext28 Numbered Heading 1;}
+{\s30\tx431\sbasedon21\snext28 Numbered Heading 2;}
+{\s12\fi-431\li720\sbasedon28 Diamond List;}
+{\s9\fi-431\li2880\sbasedon28\snext28 Contents 4;}
+{\s8\fi-431\li2160\sbasedon28\snext28 Contents 3;}
+{\s31\tx431\sbasedon22\snext28 Numbered Heading 3;}
+{\s32\fi-431\li720\sbasedon28 Numbered List;}
 {\s15\sbasedon28 Endnote Text;}
 {\*\cs14\fs20\super\sbasedon28 Endnote Reference;}
-{\s4\fi-432\li720\sbasedon28 Bullet List;}
-{\s5\tx1584\sbasedon29 Chapter Heading;}
-{\s35\fi-432\li720\sbasedon28 Square List;}
-{\s11\fi-432\li720\sbasedon28 Dashed List;}
-{\s22\sb440\sa60\f2\fs24\b\sbasedon28 Heading 3;}
-{\s37\fi-432\li720\sbasedon28 Tick List;}
-{\s24\fi-432\li720\sbasedon28 Heart List;}
-{\s40\fi-432\li720\sbasedon32 Upper Roman List;}
-{\s39\fi-432\li720\sbasedon32 Upper Case List;}
+{\s4\fi-431\li720\sbasedon28 Bullet List;}
+{\s5\tx1584\sbasedon29\snext28 Chapter Heading;}
+{\s35\fi-431\li720\sbasedon28 Square List;}
+{\s11\fi-431\li720\sbasedon28 Dashed List;}
+{\s22\sb440\sa60\f2\fs24\b\sbasedon28\snext28 Heading 3;}
+{\s37\fi-431\li720\sbasedon28 Tick List;}
+{\s24\fi-431\li720\sbasedon28 Heart List;}
+{\s40\fi-431\li720\sbasedon32 Upper Roman List;}
+{\s39\fi-431\li720\sbasedon32 Upper Case List;}
 {\s16\fi-288\li288\fs20\sbasedon28 Footnote;}
-{\s19\fi-432\li720\sbasedon28 Hand List;}
+{\s19\fi-431\li720\sbasedon28 Hand List;}
 {\s18\fs20\sbasedon28 Footnote Text;}
-{\s20\sb440\sa60\f2\fs34\b\sbasedon28 Heading 1;}
-{\s21\sb440\sa60\f2\fs28\b\sbasedon28 Heading 2;}
-{\s10\qc\sb240\sa120\f2\fs32\b\sbasedon28 Contents Header;}
-{\s23\sb440\sa60\f2\fs24\b\sbasedon28 Heading 4;}
-{\s28\sl240\slmult1\f1\fs24\sbasedon28 Normal;}
-{\s26\fi-432\li720\sbasedon32 Lower Case List;}
-{\s2\li1440\ri1440\sa120\sbasedon28 Block Text;}
+{\s20\sb440\sa60\f2\fs34\b\sbasedon28\snext28 Heading 1;}
+{\s21\sb440\sa60\f2\fs28\b\sbasedon28\snext28 Heading 2;}
+{\s10\qc\sb240\sa119\f2\fs32\b\sbasedon28\snext28 Contents Header;}
+{\s23\sb440\sa60\f2\fs24\b\sbasedon28\snext28 Heading 4;}
+{\s28\sl240\slmult1\f1\fs24 Normal;}
+{\s26\fi-431\li720\sbasedon32 Lower Case List;}
+{\s2\li1440\ri1440\sa119\sbasedon28 Block Text;}
 {\s33\f3\sbasedon28 Plain Text;}
-{\s34\tx1584\sbasedon29 Section Heading;}
-{\s25\fi-432\li720\sbasedon28 Implies List;}
-{\s3\fi-432\li720\sbasedon28 Box List;}
-{\s36\fi-432\li720\sbasedon28 Star List;}
+{\s34\tx1584\sbasedon29\snext28 Section Heading;}
+{\s25\fi-431\li720\sbasedon28 Implies List;}
+{\s3\fi-431\li720\sbasedon28 Box List;}
+{\s36\fi-431\li720\sbasedon28 Star List;}
 {\*\cs17\fs20\super\sbasedon28 Footnote Reference;}
-{\s38\fi-432\li720\sbasedon28 Triangle List;}
+{\s38\fi-431\li720\sbasedon28 Triangle List;}
 {\s13\fi-288\li288\sbasedon28 Endnote;}}
 \kerning0\cf0\ftnbj\fet2\ftnstart1\ftnnar\aftnnar\ftnstart1\aftnstart1\aenddoc\revprop3{\*\rdf}{\info\uc1}\deftab720\viewkind1\paperw12240\paperh15840\margl1440\margr1440\widowctrl
 \sectd\sbknone\colsx360\headery0\footery0\margtsxn1008\margbsxn1008\marglsxn1008\margrsxn1008\pgncont\ltrsect
 \pard\plain\ltrpar\qc\sl240\slmult1\itap0{\f0\fs40\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Sean Dezoysa}{\f0\fs40\b\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\qc\sl240\slmult1\itap0{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "mailto:mrseandezoysa@gmail.com"}}{\*\fldrslt{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch mrseandezoysa@gmail.com}}}{\f0\fs24\lang1033{\*\listtag0} | (305) 985-5535 | }{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez"}}{\*\fldrslt{\f0\fs24\lang1033{\*\listtag0}github.com/SeanDez}}}{\f0\fs24\lang1033{\*\listtag0} | US Citizen}{\f1\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\qc\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\sl240\slmult1\itap0{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "mailto:mrseandezoysa@gmail.com"}}{\*\fldrslt{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch mrseandezoysa@gmail.com}}}{\f0\fs24\lang1033{\*\listtag0} | (305) 985-5535 | }{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez"}}{\*\fldrslt{\f0\fs24\lang1033{\*\listtag0}github.com/SeanDez}}}{\f0\fs24\lang1033{\*\listtag0} | US Citizen}{\f0\fs40\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\ul\lang1033{\*\listtag0}\abinodiroverride\ltrch RELEVANT EXPERIENCE                                                                                                                                }{\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Jr. Web Developer Intern }{\f0\fs24\lang1033{\*\listtag0}                                                                            December 2019 -- June 2020}{\f0\fs24\b\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\i\lang1033{\*\listtag0}\abinodiroverride\ltrch ScaleFactor}{\f0\fs24\lang1033{\*\listtag0}, Austin, TX}{\f0\fs24\i\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Full Stack Engineer                                                               \tab \tab       }{\f0\fs24\lang1033{\*\listtag0} April 2018 -- June 2020}{\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\i\lang1033{\*\listtag0}\abinodiroverride\ltrch ScaleFactor, Austin, TX (remote distributed team)}{\f0\fs24\i\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     }{\f0\fs24\lang1033{\*\listtag0}- Debugged help desk software with minimal input from team leaders}{\f0\fs24\lang1033{\*\listtag0}.}{\f0\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - Extended support ticketing functionality to use round robin distribution pattern.}{\f0\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - Improved customer experience by writing and maintaining help documentation, researching and drafting blog articles.}{\f0\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - Extended REST APIs to feed data into Machine Learning algorithms  }{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - }{\f0\fs24\lang1033{\*\listtag0}Extended support ticketing functionality to use round robin distribution pattern.}{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - }{\f0\fs24\lang1033{\*\listtag0}Debugged React.js front end issues related to responsive design. Extended front end to accommodate growing feature set.}{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Website Support Intern                     \tab \tab                                    }{\f0\fs24\lang1033{\*\listtag0}October 2017 -- April 2018 }{\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\i\lang1033{\*\listtag0}\abinodiroverride\ltrch ScaleFactor, Austin, TX}{\f0\fs24\i\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - }{\f0\fs24\lang1033{\*\listtag0}Coded test cases to reduce risk of runtime errors and ensure data integrity}{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - }{\f0\fs24\lang1033{\*\listtag0}Provided support and guidance to customers, both new and experiencing issues}{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - }{\f0\fs24\lang1033{\*\listtag0}Wrote article and marketing content for the website}{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\ul\lang1033{\*\listtag0}\abinodiroverride\ltrch PORTFOLIO PROJECTS                                                                                                                                   }{\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Asana Task Repeater}{\f0\fs24\lang1033{\*\listtag0} }{\f0\fs24\i\lang1033{\*\listtag0}Full stack JS}{\f0\fs24\lang1033{\*\listtag0}                          Typescript | React | Express | PostgreSQL | Jest }{\f0\fs24\b\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Auto-duplicates Asana tasks based on user defined rules.}{\f1\fs24\lang1033{\*\listtag0}        }{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/asana_task_repeater_frontend"}}{\*\fldrslt{\cf3\f0\fs22\ul\lang1033{\*\listtag0}Front End Github}}}{\f0\fs22\lang1033{\*\listtag0}    }{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/asanaTaskRepeaterBackend"}}{\*\fldrslt{\cf3\f0\fs22\ul\lang1033{\*\listtag0}Back End Github}}}{\f0\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Auto-duplicates Asana tasks based on user defined rules.}{\f1\fs24\lang1033{\*\listtag0}        }{\field{\*\fldinst {\f0\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/asana_task_repeater_frontend"}}{\*\fldrslt{\cf3\f0\fs22\ul\lang1033{\*\listtag0}Front End Github}}}{\f0\fs22\lang1033{\*\listtag0}    }{\field{\*\fldinst {\f0\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/asanaTaskRepeaterBackend"}}{\*\fldrslt{\cf3\f0\fs22\ul\lang1033{\*\listtag0}Back End Github}}}{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\cf3\f0\fs22\ul\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - Password-less sign in via 3rd party service. OAuth flow handled manually.}{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - MVC-like architecture. File/folder organization based on functionality.}{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - Cron operations update back end user data. Test coverage on key functions.}{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - Production ready for a public, multi-user environment. Planned free roll-out after some extra non-YAGNI features are added.}{\f0\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Personal Site}{\f0\fs24\lang1033{\*\listtag0} }{\f0\fs24\i\lang1033{\*\listtag0}The aesthetics project}{\f0\fs24\lang1033{\*\listtag0}                             React | Framer Motion | Styled Components}{\f0\fs24\b\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "http://seandz.com"}}{\*\fldrslt{\cf3\f0\fs24\ul\lang1033{\*\listtag0}\abinodiroverride\ltrch seandz.com}}}{\f0\fs24\lang1033{\*\listtag0}                                                                                                                                           }{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/portfolioSite"}}{\*\fldrslt{\cf3\f0\fs24\ul\lang1033{\*\listtag0}Github repo}}}{\f1\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Personal Site}{\f0\fs24\lang1033{\*\listtag0} }{\f0\fs24\i\lang1033{\*\listtag0}The aesthetics project}{\f0\fs24\lang1033{\*\listtag0}                             React | Framer Motion | Styled Components}{\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "http://seandz.com"}}{\*\fldrslt{\cf3\f0\fs24\ul\lang1033{\*\listtag0}\abinodiroverride\ltrch seandz.com}}}{\f0\fs24\lang1033{\*\listtag0}                                                                                                                                           }{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/portfolioSite"}}{\*\fldrslt{\cf3\f0\fs24\ul\lang1033{\*\listtag0}Github repo}}}{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\cf3\f0\fs24\ul\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - State based backgrounds. Transparency overlays for readability.}{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - (Mostly) subtle, UX enhancing animations.}{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - Techy font selection and color palette to suit target audience.}{\f0\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Foreign Sentence CourseBuilder}{\f0\fs24\lang1033{\*\listtag0} }{\f0\fs24\i\lang1033{\*\listtag0}OOP mandatory}{\f0\fs24\lang1033{\*\listtag0}                                              Node | Google Cloud}{\f0\fs24\b\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch                                                                                                                                                                   }{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/foreignSentenceRepeater"}}{\*\fldrslt{\cf3\f0\fs24\ul\lang1033{\*\listtag0}Github repo}}}{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch                                                                                                                                                                   }{\field{\*\fldinst {\f0\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/foreignSentenceRepeater"}}{\*\fldrslt{\cf3\f0\fs24\ul\lang1033{\*\listtag0}Github repo}}}{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - Polymorphic design (duck typing onto subclass instances).                                        }{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - Fairly complex object interaction: translation, audio build out, compression.}{\f0\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Prospector}{\f0\fs24\lang1033{\*\listtag0} }{\f0\fs24\i\lang1033{\*\listtag0}Job hunting on semi-auto}{\f0\fs24\lang1033{\*\listtag0}                                React | Express | APIs (Hubspot, Mailgun)}{\f0\fs24\b\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch A quick contact adder and emailer               }{\f0\fs22\lang1033{\*\listtag0}                                       }{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/prospector_frontend"}}{\*\fldrslt{\cf3\f0\fs22\ul\lang1033{\*\listtag0}Front End Github}}}{\f0\fs22\lang1033{\*\listtag0}       }{\field{\*\fldinst {\f1\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/prospector_backend"}}{\*\fldrslt{\cf3\f0\fs22\ul\lang1033{\*\listtag0}Back End Github}}}{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Prospector}{\f0\fs24\lang1033{\*\listtag0} }{\f0\fs24\i\lang1033{\*\listtag0}Job hunting on semi-auto}{\f0\fs24\lang1033{\*\listtag0}                                React | Express | APIs (Hubspot, Mailgun)}{\f0\fs24\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch A quick contact adder and emailer               }{\f0\fs22\lang1033{\*\listtag0}                                       }{\field{\*\fldinst {\f0\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/prospector_frontend"}}{\*\fldrslt{\cf3\f0\fs22\ul\lang1033{\*\listtag0}Front End Github}}}{\f0\fs22\lang1033{\*\listtag0}       }{\field{\*\fldinst {\f0\fs24\lang1033{\*\listtag0} HYPERLINK "https://github.com/SeanDez/prospector_backend"}}{\*\fldrslt{\cf3\f0\fs22\ul\lang1033{\*\listtag0}Back End Github}}}{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\cf3\f0\fs22\ul\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch     - CRM insert & emailing via hotkey press. Data auto-parsed from single textarea field.}{\f0\fs24\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\ul\lang1033{\*\listtag0}\abinodiroverride\ltrch EDUCATION                                                                                                                                                         }{\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\b\lang1033{\*\listtag0}\abinodiroverride\ltrch Bachelor of Finance, Financial Institutions}{\f0\fs24\lang1033{\*\listtag0}                                                                                July 2012       }{\f0\fs24\b\lang1033{\*\listtag0}\par}
-\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch California State University, Long Beach                                                                                          }{\f0\fs24\lang1033{\*\listtag0}GPA: 3.55}{\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch California State University, Long Beach                                                                                          GPA: 3.55}{\f0\fs24\lang1033{\*\listtag0}\par}
 \pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f1\fs24\lang1033{\*\listtag0}\par}}

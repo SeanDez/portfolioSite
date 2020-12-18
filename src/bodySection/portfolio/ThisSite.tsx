@@ -23,7 +23,7 @@ export default (props: PropsShape) => {
             >
               <FittedImage src={props.GithubLogo} alt='Github logo' />
             </a>
-          </LogoContainer>
+          </LogoContainer>+
       </div>
 
       <h3>Design Highlights</h3>
