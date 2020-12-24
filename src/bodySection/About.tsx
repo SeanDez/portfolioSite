@@ -14,7 +14,7 @@ export default (props: PropsShape) => (
   >
     <h2>About</h2>
 
-    <p>Working as a freelance writer was creatively gratifying, but the puzzle-solving side of my left brain often felt neglected. I've always enjoyed the aesthetics and logical component of web development, and decided to study it part time about five years ago.</p>
+    <p>Working as a writer was creatively gratifying, but the puzzle-solving side of my left brain often felt neglected. I've always enjoyed the aesthetics and logical component of web development, and decided to study it part time about five years ago.</p>
 
     <p>As a new, self studying entrant into the industry, I knew there would be less companies willing to take me on initially. Thankfully I was already writing for ScaleFactor and their Tech Lead decided to hire me on as an intern based on my unpolished skills and enthusiasm to learn more.</p>
 
