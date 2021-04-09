@@ -75,7 +75,7 @@ export default function (props: PropsShape) {
 
       <h3>Commentary</h3>
 
-      <p>Like every app on my portfolio, this app has a real world use case. I learned about Asana at my previous employer, and thought it would be perfect for managing a virtual assistant for a side project unrelated to web development. I just didn't like having to constantly manage the manual task additions. My input wasn't needed, so it seemed like a great place to add automation.</p>
+      <p>Like every app on my portfolio, this app has a real world use case. I thought Asana would be perfect for managing a virtual assistant for a side project unrelated to web development. I just didn't like having to constantly manage the manual task additions. My input wasn't needed, so it seemed like a great place to add automation.</p>
         
       <p>Phase one of this app was dedicated solely to handling the repetitive task of duplicating tasks that needed to be repeated on a regular schedule. I've done it by accessing the Asana API, allowing for repeat rules to save to PostgreSQL database, and then enforcing creating of new tasks using a cron job on the server, which runs my task checking and duplication logic.</p>
 
