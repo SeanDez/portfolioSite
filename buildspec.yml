@@ -14,7 +14,7 @@ phases:
     on-failure: ABORT
     commands:
       - npm run build
-  artifacts:
-    files:
-      - build/*
-    name: buildFolder
+artifacts:
+  files:
+    - build/*
+  name: buildFolder
