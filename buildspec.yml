@@ -1,0 +1,16 @@
+version: 0.2
+
+# npm i
+# npm run build
+
+phases:
+  install:
+    on-failure: ABORT
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - npm i
+  build:
+    on-failure: ABORT
+    commands:
+      - npm run build
